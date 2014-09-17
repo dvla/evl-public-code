@@ -1,0 +1,19 @@
+.resultstrip { 
+	background: none; 
+}
+
+input[type="submit"], a[rel="nofollow"], .intro, #phase-notice, #MainContent_divCancelButton, .toggle-target, .more-info {
+	display: none;
+}
+
+h1 { font-size: 18px; }
+
+h2,h3 { font-size: 15px; }
+
+.application-notice { display: ""; }
+
+a:link:after,
+a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 90%;
+}

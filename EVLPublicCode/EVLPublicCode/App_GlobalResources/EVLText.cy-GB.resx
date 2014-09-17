@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AltVedCommencementDate" xml:space="preserve">
+    <value>Dyddiad cychwyn Alt VED</value>
+  </data>
+  <data name="ApplicationReferenceText" xml:space="preserve">
+    <value>Cyfeirnod eich cais</value>
+  </data>
+  <data name="BackToPaymentText" xml:space="preserve">
+    <value>Yn ôl i'r taliad</value>
+  </data>
+  <data name="BackToStartText" xml:space="preserve">
+    <value>Yn ôl i'r dudalen gyntaf</value>
+  </data>
+  <data name="BandRate" xml:space="preserve">
+    <value>Cyfradd band</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Canslo cais</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Canslo</value>
+  </data>
+  <data name="CardDeclarationText" xml:space="preserve">
+    <value>Unwaith y cymerir taliad ni ellir dad-wneud</value>
+  </data>
+  <data name="CardExpiryDate" xml:space="preserve">
+    <value>Dyddiad y mae'r cerdyn yn dod i ben</value>
+  </data>
+  <data name="CardExpiryDateInvalid" xml:space="preserve">
+    <value>Rhowch ddyddiad dod i ben dilys</value>
+  </data>
+  <data name="CardExpiryMonthMissing" xml:space="preserve">
+    <value>Rhowch y mis dod i ben &lt;br /&gt;</value>
+  </data>
+  <data name="CardExpiryYearMissing" xml:space="preserve">
+    <value>Rhowch y flwyddyn dod i ben&lt;br /&gt;</value>
+  </data>
+  <data name="CardIssueDate" xml:space="preserve">
+    <value>Dyddiad yn ddilys o</value>
+  </data>
+  <data name="CardIssueDateInvalid" xml:space="preserve">
+    <value>Ni all y dyddiad fod yn y dyfodol</value>
+  </data>
+  <data name="CardIssueMonthMissing" xml:space="preserve">
+    <value>Rhowch y dyddiad dod i ben&lt;br /&gt;</value>
+  </data>
+  <data name="CardIssueNumber" xml:space="preserve">
+    <value>Rhif cyhoeddi'r cerdyn</value>
+  </data>
+  <data name="CardIssueNumberInvalid" xml:space="preserve">
+    <value>Mae'r rhif cyhoeddi'n annilys</value>
+  </data>
+  <data name="CardIssueNumberMissing" xml:space="preserve">
+    <value>Rhaid rhoi rhif cyhoeddi</value>
+  </data>
+  <data name="CardIssueYearMissing" xml:space="preserve">
+    <value>Rhowch ddyddiad dod i ben</value>
+  </data>
+  <data name="CardNumber" xml:space="preserve">
+    <value>Rhif y cerdyn</value>
+  </data>
+  <data name="CardNumberInvalid" xml:space="preserve">
+    <value>Rhif y cerdyn yn annilys. Dylai rhif y cerdyn fod rhwng 16 ac 19 digid.</value>
+  </data>
+  <data name="CardNumberMissing" xml:space="preserve">
+    <value>Rhowch rif llawn y cerdyn</value>
+  </data>
+  <data name="CardSecurityCode" xml:space="preserve">
+    <value>Tri rhif olaf cod diogelwch y cerdyn</value>
+  </data>
+  <data name="CardSecurityCodeInvalid" xml:space="preserve">
+    <value>Mae cod diogelwch y cerdyn yn annilys&lt;br /&gt;</value>
+  </data>
+  <data name="CardSecurityCodeMissing" xml:space="preserve">
+    <value>Rhowch god diogelwch y cerdyn</value>
+  </data>
+  <data name="CardSecurityCodeText" xml:space="preserve">
+    <value>Y tri digid olaf ar y slip llofnod</value>
+  </data>
+  <data name="CardSurchargePaid" xml:space="preserve">
+    <value>Talwyd gordaliad cerdyn</value>
+  </data>
+  <data name="CardType" xml:space="preserve">
+    <value>Math o gerdyn</value>
+  </data>
+  <data name="CertificateValidFrom" xml:space="preserve">
+    <value>Bydd angen i'ch tystysgrif dod yn ddilys ar</value>
+  </data>
+  <data name="CheckDetailsHeader" xml:space="preserve">
+    <value>Manylion cerdyn</value>
+  </data>
+  <data name="CheckDetailsNumberPlateMessage" xml:space="preserve">
+    <value>Rhif cofrestru'r cerbyd</value>
+  </data>
+  <data name="Co2Text" xml:space="preserve">
+    <value>Allyriadau CO₂ </value>
+  </data>
+  <data name="ContinueText" xml:space="preserve">
+    <value>Parhau</value>
+  </data>
+  <data name="CustomerSurname" xml:space="preserve">
+    <value>Hyd at y 3 nod cyntaf o gyfenw o ddeilydd y dystysgrif eithriad ar sail anabledd e.e. Woz</value>
+  </data>
+  <data name="CustomerSurnameErrorPrompt" xml:space="preserve">
+    <value>Rhowch 3 nod cyntaf eich cyfenw</value>
+  </data>
+  <data name="CylinderCapacityText" xml:space="preserve">
+    <value>Maint silindr (cc)</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Rhowch ddyddiad geni deilydd y dystysgrif eithriad ar sail anabledd (DD/MM/YYYY)</value>
+  </data>
+  <data name="DateOfBirthErrorPrompt" xml:space="preserve">
+    <value>Rhowch ddyddiad geni cywir</value>
+  </data>
+  <data name="DateOfFirstRegistrationText" xml:space="preserve">
+    <value>Dyddiad cofrestru cyntaf</value>
+  </data>
+  <data name="DateofLastV5CIssuedText" xml:space="preserve">
+    <value>Dyddiad cyhoeddi'r V5C diwethaf</value>
+  </data>
+  <data name="DateOfLiability" xml:space="preserve">
+    <value>Dyddiad atebolrwydd</value>
+  </data>
+  <data name="DaysAgo" xml:space="preserve">
+    <value>o ddyddiau yn  ôl</value>
+  </data>
+  <data name="Displaying" xml:space="preserve">
+    <value>Yn arddangos</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Cyfnod</value>
+  </data>
+  <data name="EitherMakeFromDDLorTextBox" xml:space="preserve">
+    <value>Rhaid i chi ddewis gwneuthuriad o'r rhestr neu roi gwneuthuriad eich cerbyd yn y maes testun</value>
+  </data>
+  <data name="EmailAddressDeclaration" xml:space="preserve">
+    <value>Gall y cyfeiriad e-bost a /neu rif ffôn symudol a ddarperir gennych  gael ei ddefnyddio hefyd i ofyn am eich profiad o ddefnyddio'r gwasanaeth hwn, neu er mwyn cael mwy o wybodaeth ynghylch gwasanaethau moduro eraill.&lt;br/&gt;Nid yw'r DVLA yn rhannu rhifau ffôn symudol neu gyfeiriadau e-bost gydag unrhyw sefydliadau allanol.</value>
+  </data>
+  <data name="EmailAddressOptOut" xml:space="preserve">
+    <value>Ticiwch os hoffech gael gwybodaeth wedi ei hanfon atoch</value>
+  </data>
+  <data name="EmailAddressSornDeclarationText" xml:space="preserve">
+    <value>Anfonir e-bost atoch i gadarnhau eich gweithred os rhowch gyfeiriad e-bost dilys. Ni fydd y DVLA yn anfon llythyr cydnabod atoch.</value>
+  </data>
+  <data name="EmailAddressText" xml:space="preserve">
+    <value>Cyfeiriad e-bost (dewisol. Anfonir e-bost i gadarnhau eich trafodion)</value>
+  </data>
+  <data name="EmailConfirmationText" xml:space="preserve">
+    <value>Rhowch gyfeiriad e-bost dilys</value>
+  </data>
+  <data name="ExemptionCertificateNumber" xml:space="preserve">
+    <value>Rhif cyfres tystysgrif eithrio VED (cewch hyd iddo ar eich tystysgrif WPMS neu DLA404 a gyhoeddwyd gan SPVA &amp; DWP)</value>
+  </data>
+  <data name="ExemptionCertificateNumberErrorPrompt" xml:space="preserve">
+    <value>Rhowch rif cyfres</value>
+  </data>
+  <data name="ExportMarkerText" xml:space="preserve">
+    <value>Marciwr allforio</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Wedi gorffen</value>
+  </data>
+  <data name="ForText" xml:space="preserve">
+    <value>ar gyfer</value>
+  </data>
+  <data name="ForVehicleRegistrationText" xml:space="preserve">
+    <value>ar gyfer cofrestru cerbyd</value>
+  </data>
+  <data name="FuelTypeText" xml:space="preserve">
+    <value>Math o danwydd</value>
+  </data>
+  <data name="GlobalMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IncludeV5CMessage" xml:space="preserve">
+    <value>Rhowch y dystysgrif gofrestru V5C anghywir i'w diwygio.</value>
+  </data>
+  <data name="IncorrectVehicleDetailsMessage" xml:space="preserve">
+    <value>Os credwch fod y manylion ar gofnod y cerbyd yn anghywir, ysgrifennwch at:</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Eitem</value>
+  </data>
+  <data name="MobileNumberText" xml:space="preserve">
+    <value>Rhif ffôn symudol (dewisol)</value>
+  </data>
+  <data name="MobileNumberValidatorText" xml:space="preserve">
+    <value>Rhowch rif ffôn symudol dilys</value>
+  </data>
+  <data name="MonthAgo" xml:space="preserve">
+    <value>1 mis yn ôl</value>
+  </data>
+  <data name="MonthConfirmationText" xml:space="preserve">
+    <value>disg dreth fisol</value>
+  </data>
+  <data name="MonthsAgo" xml:space="preserve">
+    <value>{0} o fisoedd yn ôl</value>
+  </data>
+  <data name="MotDeclaration" xml:space="preserve">
+    <value>Dewiswch y datganiad priodol:</value>
+  </data>
+  <data name="MotDeclarationCorrect" xml:space="preserve">
+    <value>Rwy'n datgan fod hyn yn gywir</value>
+  </data>
+  <data name="MotDeclarationErrorMessage" xml:space="preserve">
+    <value>Dewiswch ddatganiad MOT/GVT</value>
+  </data>
+  <data name="MotDeclarationIncorrect" xml:space="preserve">
+    <value>Rwy'n datgan fod hwn yn anghywir</value>
+  </data>
+  <data name="NiNumber" xml:space="preserve">
+    <value>Rhif Yswiriant Gwladol (NI) deilydd y dystysgrif eithriad ar sail anabledd e.e. AB123456X</value>
+  </data>
+  <data name="NiNumberErrorPrompt" xml:space="preserve">
+    <value>Rhowch rif Yswiriant Gwladol  dilys</value>
+  </data>
+  <data name="NoReminderTaxMessage" xml:space="preserve">
+    <value>Nid yw'r ffurflen atgoffa V11W gennyf, dim ond y dystysgrif gofestru</value>
+  </data>
+  <data name="NoV11HeaderSORN" xml:space="preserve">
+    <value>Gallwch wneud HOS ar gyfer eich cerbyd ar-lein drwy ddefnyddio rhif cofrestru'r cerbyd (rhif plât) a thystysgrif cofrestru (llyfr log)</value>
+  </data>
+  <data name="NoV11HeaderTax" xml:space="preserve">
+    <value>Gallwch adnewyddu eich disg dreth ar-lein drwy ddefnyddio rhif cofrestru'r cerbyd (rhif plât) a thystysgrif cofrestru (llyfr log)</value>
+  </data>
+  <data name="NoV11InfoAlterMessage" xml:space="preserve">
+    <value>Wedi prynu eich cerbyd yn ddiweddar? &lt;br&gt; Ewch ymlaen os yw’r dystysgrif gofrestru lawn gennych yn unig, yn eich enw chi ac yn cynnwys eich cyfeiriad chi, neu fel arall ni fyddwch yn derbyn eich disg dreth. Os nad yw eich enw a’ch cyfeiriad presennol ar y dystysgrif gofrestru lawn bydd angen i chi wneud cais am ddisg dreth mewn Swyddfa’r Post® sydd yn cyhoeddi treth.</value>
+  </data>
+  <data name="NumberOfAxles" xml:space="preserve">
+    <value>Nifer o echelau</value>
+  </data>
+  <data name="NumberPlate" xml:space="preserve">
+    <value>Rhif plât</value>
+  </data>
+  <data name="OfText" xml:space="preserve">
+    <value>o</value>
+  </data>
+  <data name="PaymentSummary" xml:space="preserve">
+    <value>Crynodeb taliad</value>
+  </data>
+  <data name="PayNowButtonText" xml:space="preserve">
+    <value>Talu nawr</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Pris</value>
+  </data>
+  <data name="RenewalPeriodHeaderText" xml:space="preserve">
+    <value>Pa mor hir ydych chi eisiau adnewyddu am?</value>
+  </data>
+  <data name="RenewTaxConfirmationText" xml:space="preserve">
+    <value>Wedi ei wneud</value>
+  </data>
+  <data name="RenewTaxConfirmVehicleText" xml:space="preserve">
+    <value>Manylion y cerbyd</value>
+  </data>
+  <data name="RenewTaxHeader" xml:space="preserve">
+    <value>Adnewyddu disg dreth</value>
+  </data>
+  <data name="RenewTaxPaymentText" xml:space="preserve">
+    <value>Talu</value>
+  </data>
+  <data name="RenewTaxReferenceNumberStepText" xml:space="preserve">
+    <value>Eich cerbyd</value>
+  </data>
+  <data name="RenewTaxVEDConfirmationText" xml:space="preserve">
+    <value>Gwirio cyfnod adnewyddu</value>
+  </data>
+  <data name="RenewTaxVedPickerText" xml:space="preserve">
+    <value>Cyfnod adnewyddu</value>
+  </data>
+  <data name="SearchAgainButtonText" xml:space="preserve">
+    <value>Chwilio eto</value>
+  </data>
+  <data name="SearchButtonText" xml:space="preserve">
+    <value>Chwilio</value>
+  </data>
+  <data name="SelectText" xml:space="preserve">
+    <value>Dewis</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Gwasanaeth</value>
+  </data>
+  <data name="SixMonthRate" xml:space="preserve">
+    <value>Cyfradd 6 mis</value>
+  </data>
+  <data name="SixMonths" xml:space="preserve">
+    <value>6 Mis</value>
+  </data>
+  <data name="SornButtonText" xml:space="preserve">
+    <value>HOS</value>
+  </data>
+  <data name="SornDisclaimerText" xml:space="preserve">
+    <value>Byddwch yn ymwybodol os bydd y cerbyd wedi ei drethu'n ddiweddar neu HOS wedi ei ddatgan, efallai na fydd y manylion hyn wedi eu diweddaru hyd yma ar gofnod y cerbyd.</value>
+  </data>
+  <data name="SORNVehicle" xml:space="preserve">
+    <value>HOS Cerbyd</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Dyddiad cychwyn</value>
+  </data>
+  <data name="StartDatePrompt" xml:space="preserve">
+    <value>Dewiswch ddyddiad cychwyn ar gyfer eich treth:</value>
+  </data>
+  <data name="StartDatePrompt1" xml:space="preserve">
+    <value>Dewiswch ddyddiad cychwyn ar gyfer eich treth:</value>
+  </data>
+  <data name="StartDatePromptDeclaration" xml:space="preserve">
+    <value>Os dewiswch drethu o’r 1&lt;sup&gt;st&lt;/sup&gt; o’r mis canlynol, byddwch yn ymwybodol y bydd eich cerbyd yn parhau heb ei drethu neu bydd HOS mewn grym tan y 1&lt;sup&gt;st&lt;/sup&gt; o’r mis nesaf. Ni ellir defnyddio’r cerbyd ar ffordd gyhoeddus tan 1 &lt;sup&gt;st&lt;/sup&gt; o’r mis nesaf.</value>
+  </data>
+  <data name="SubmitDeclarationText" xml:space="preserve">
+    <value>Cyflwyno datganiad</value>
+  </data>
+  <data name="TaxBand" xml:space="preserve">
+    <value>Band Treth</value>
+  </data>
+  <data name="TaxClass" xml:space="preserve">
+    <value>Dosbarth Treth</value>
+  </data>
+  <data name="TaxDiscDeliveryMessage" xml:space="preserve">
+    <value>Anfonir y ddisg dreth at y perchennog cofrestredig i'r cyfeiriad sydd gan y DVLA ar hyn o bryd, a dylai gyrraedd cyn pen 5 diwrnod gwaith.</value>
+  </data>
+  <data name="ThankYouPaymentText" xml:space="preserve">
+    <value>Diolch am eich taliad</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Heddiw</value>
+  </data>
+  <data name="ToText" xml:space="preserve">
+    <value>i</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Geisio eto</value>
+  </data>
+  <data name="TwelvemonthRate" xml:space="preserve">
+    <value>Cyfradd 12 Mis</value>
+  </data>
+  <data name="TwelveMonths" xml:space="preserve">
+    <value>12 Mis</value>
+  </data>
+  <data name="V11ErrorMessage" xml:space="preserve">
+    <value>Rhowch y rhif 16 digid llawn</value>
+  </data>
+  <data name="V11ErrorMessageMin" xml:space="preserve">
+    <value>Rhaid i chi roi eich rhif cyfeirnod 16 digid</value>
+  </data>
+  <data name="V11RefNumImageText" xml:space="preserve">
+    <value>Mae eich rhif cyfeirnod atgoffa V11 i'w weld ar flaen eich nodyn atgoffa V11:</value>
+  </data>
+  <data name="V11ReminderHeader" xml:space="preserve">
+    <value>Yn gyntaf rydym angen manylion eich cerbyd</value>
+  </data>
+  <data name="V11ReminderMessage" xml:space="preserve">
+    <value>Teipiwch y rhif cyfeirnod 16 digid o'ch nodyn atgoffa V11</value>
+  </data>
+  <data name="V149Link" xml:space="preserve">
+    <value>https://www.gov.uk/government/publications/rates-of-vehicle-tax-v149</value>
+  </data>
+  <data name="V149Text" xml:space="preserve">
+    <value>Cyfraddau treth cerbyd (V149)</value>
+  </data>
+  <data name="V5CDocumentReferenceNumberText" xml:space="preserve">
+    <value>Rhif cyfeirnod dogfen V5C (dewisol)</value>
+  </data>
+  <data name="V5CErrorMessage" xml:space="preserve">
+    <value>Rhowch y cyfeirnod 11 digid i fewn</value>
+  </data>
+  <data name="V5CErrorMessageMin" xml:space="preserve">
+    <value>Rhaid i chi roi eich rhif cyfeirnod 11 digid</value>
+  </data>
+  <data name="V5CImageText" xml:space="preserve">
+    <value>Mae eich rhif cyfeirnod dogfen V5C i'w weld ar flaen eich nodyn atgoffa V5C:</value>
+  </data>
+  <data name="V5CNumberMessage" xml:space="preserve">
+    <value>Teipiwch y rhif cyfeirnod 11 digid o flaen eich tystysgrif cofrestru</value>
+  </data>
+  <data name="V5CVRMMessage" xml:space="preserve">
+    <value>Ychwanegwch eich rhif cofrestru</value>
+  </data>
+  <data name="ValidFrom" xml:space="preserve">
+    <value>yn ddilys o</value>
+  </data>
+  <data name="VCSAddress" xml:space="preserve">
+    <value>&lt;p&gt;VCS&lt;/p&gt;
+&lt;p&gt;DVLA&lt;/p&gt;
+&lt;p&gt;Abertawe&lt;/p&gt;
+&lt;p&gt;SA99 1BA&lt;/p&gt;</value>
+  </data>
+  <data name="VedCommencementDate" xml:space="preserve">
+    <value>Dyddiad cychwyn VED</value>
+  </data>
+  <data name="VEDConfirmationHeader" xml:space="preserve">
+    <value>Y ddisg a ymgeisiwyd amdani yw:</value>
+  </data>
+  <data name="VEDContinueMessage" xml:space="preserve">
+    <value>A ydych yn fodlon parhau? Y manylion yw:</value>
+  </data>
+  <data name="VedExempt" xml:space="preserve">
+    <value>Wedi eithrio rhag VED</value>
+  </data>
+  <data name="VedExemptionCertificateNumber" xml:space="preserve">
+    <value>Rhif cyfres tystysgrif eithrio VED</value>
+  </data>
+  <data name="VEDValidationMessage" xml:space="preserve">
+    <value>Dewiswch y ddisg dreth yr hoffech ar gyfer y cerbyd</value>
+  </data>
+  <data name="VehicleColourText" xml:space="preserve">
+    <value>Lliw y cerbyd</value>
+  </data>
+  <data name="VehicleEnquiryHeader" xml:space="preserve">
+    <value>Ymholiad cerbyd</value>
+  </data>
+  <data name="VehicleEnquiryText" xml:space="preserve">
+    <value>I wneud ymholiad rhowch rif cofrestru'r cerbyd (rhif plât) a gwneuthuriad y cerbyd.</value>
+  </data>
+  <data name="VehicleExciseDutyRateForVehicleText" xml:space="preserve">
+    <value>Treth cerbyd</value>
+  </data>
+  <data name="VehicleMake" xml:space="preserve">
+    <value>Gwneuthuriad y cerbyd</value>
+  </data>
+  <data name="VehicleREV5CMaxValidation" xml:space="preserve">
+    <value>Dylai'r rhif cyfeirnod V5C a roddwyd gennych gynnwys 11 digid</value>
+  </data>
+  <data name="VehicleREV5CMinValidation" xml:space="preserve">
+    <value>Dylai eich rhif cyfeirnod gynnwys 11 digid yn unig</value>
+  </data>
+  <data name="VehicleSearchDDLMaxValidation" xml:space="preserve">
+    <value>Dewiswch eich cerbyd o'r gwymplen neu rhowch y gwneuthuriad yn y maes 'arall'</value>
+  </data>
+  <data name="VehicleSearchDDLMinValidation" xml:space="preserve">
+    <value>Rhaid i chi ddewis eich gwneuthuriad o'r rhestr</value>
+  </data>
+  <data name="VehicleSearchMaxValidation" xml:space="preserve">
+    <value>Rhaid i chi roi'r rhif cofrestru mewn ffurf ddilys</value>
+  </data>
+  <data name="VehicleSearchMinValidation" xml:space="preserve">
+    <value>Mae'r rhif cofrestru a roesoch yn annilys</value>
+  </data>
+  <data name="VehicleSearchRequiredMaxValidationText" xml:space="preserve">
+    <value>Rhaid i chi roi rhif cofrestru er mwyn cael gweld cofnod eich cerbyd</value>
+  </data>
+  <data name="VehicleSearchRequiredMinValidationText" xml:space="preserve">
+    <value>Rhowch eich rhif cofrestru</value>
+  </data>
+  <data name="VehicleSornStatus" xml:space="preserve">
+    <value>Statws Treth/HOS</value>
+  </data>
+  <data name="VehicleStatusText" xml:space="preserve">
+    <value>Statws Cerbyd</value>
+  </data>
+  <data name="VehicleTypeApprovalText" xml:space="preserve">
+    <value>Cymeradwyaeth math Cerbyd</value>
+  </data>
+  <data name="VehicleVRN" xml:space="preserve">
+    <value>Rhif cofrestru</value>
+  </data>
+  <data name="VRMErrorMessage" xml:space="preserve">
+    <value>Rhaid i chi roi eich rhif cofrestru</value>
+  </data>
+  <data name="VRMErrorMessageMin" xml:space="preserve">
+    <value>Rhaid i chi roi eich rhif cofrestru</value>
+  </data>
+  <data name="WhereV11Num" xml:space="preserve">
+    <value>Lle mae fy rhif cyfeirnod atgoffa V11</value>
+  </data>
+  <data name="WhereV5CNum" xml:space="preserve">
+    <value>Lle mae fy rhif cyfeirnod dogfen V5C</value>
+  </data>
+  <data name="YearAgo" xml:space="preserve">
+    <value>Blwyddyn yn ôl</value>
+  </data>
+  <data name="YearOfManufactureText" xml:space="preserve">
+    <value>Blwyddyn gwneuthuriad</value>
+  </data>
+  <data name="YearsAgo" xml:space="preserve">
+    <value>10 mlynedd yn  ôl</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Ddoe</value>
+  </data>
+  <data name="NoReminderSORNMessage" xml:space="preserve">
+    <value>Nid yw'r nodyn atgoffa V11 gennyf, dim ond y dystysgrif gofrestru</value>
+  </data>
+  <data name="V5C2ErrorMessage" xml:space="preserve">
+    <value>Ceidwad newydd  Prydain Fawr- rhowch y rhif 12 digid llawn oddi wrth eich V5C/2W. Ceidwad newydd Gogledd Iwerddon - mae'n ddrwg gennyf, oherwydd deddfwriaeth yswiriant GI mae'n rhaid i geidwaid newydd drethu yn un o ganghennau Swyddfa'r Post ® sy'n delio â threth cerbyd.</value>
+  </data>
+  <data name="V5C2NumberMessage" xml:space="preserve">
+    <value>Teipiwch y rhif cyfeirnod 12 digid o flaen eich atodiad ceidwad newydd (V5CW/2)</value>
+  </data>
+  <data name="V5CRadioText1" xml:space="preserve">
+    <value>Ceidwad Presennol (yn defnyddio rhif cyfeirnod y ddogfen V5CW)</value>
+  </data>
+  <data name="V5CRadioText2" xml:space="preserve">
+    <value>Ceidwad newydd (yn defnyddio rhif cyfeirnod y ddogfen V5CW/2 atodiad ceidwad newydd)</value>
+  </data>
+  <data name="V5C2ErrorMessageMin" xml:space="preserve">
+    <value>Mae'n rhaid i chi roi eich rhif cyfeirnod 12 digid</value>
+  </data>
+  <data name="V5C2ImageText" xml:space="preserve">
+    <value>Gellir dod o hyd i rif cyfeirnod eich dogfen V5CW/2 ar flaen eich V5CW/2</value>
+  </data>
+  <data name="WhereV5C2Num" xml:space="preserve">
+    <value>Lle mae fy rhif cyfeirnod dogfen V5CW/2?</value>
+  </data>
+  <data name="cccontainer" xml:space="preserve">
+    <value>Opsiynau adnewyddu gyda cherdyn talu</value>
+  </data>
+  <data name="ddcontainer" xml:space="preserve">
+    <value>Opsiynau adnewyddu gyda debyd uniongyrchol</value>
+  </data>
+  <data name="OneMonthly" xml:space="preserve">
+    <value>Misol drwy gyfanswm debyd uniongyrchol</value>
+  </data>
+  <data name="SixMonthly" xml:space="preserve">
+    <value>6 misol drwy gyfanswm debyd uniongyrchol</value>
+  </data>
+  <data name="TwelveMonthly" xml:space="preserve">
+    <value>12 misol drwy gyfanswm debyd uniongyrchol</value>
+  </data>
+  <data name="WhereToFindThisText" xml:space="preserve">
+    <value>Lle i ddod o hyd i hyn</value>
+  </data>
+</root>

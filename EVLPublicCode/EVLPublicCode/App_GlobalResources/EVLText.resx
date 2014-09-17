@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AltVedCommencementDate" xml:space="preserve">
+    <value>Alt VED commencement date</value>
+  </data>
+  <data name="ApplicationReferenceText" xml:space="preserve">
+    <value>Your application reference</value>
+  </data>
+  <data name="BackToStartText" xml:space="preserve">
+    <value>Go back to start page</value>
+  </data>
+  <data name="BandRate" xml:space="preserve">
+    <value>Band rate</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel application</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CardExpiryDate" xml:space="preserve">
+    <value>Card expiry date</value>
+  </data>
+  <data name="CardExpiryDateInvalid" xml:space="preserve">
+    <value>Enter valid expiry date</value>
+  </data>
+  <data name="CardExpiryMonthMissing" xml:space="preserve">
+    <value>Enter month of expiry&lt;br /&gt;</value>
+  </data>
+  <data name="CardExpiryYearMissing" xml:space="preserve">
+    <value>Enter year of expiry&lt;br /&gt;</value>
+  </data>
+  <data name="CardIssueDate" xml:space="preserve">
+    <value>Valid from date</value>
+  </data>
+  <data name="CardIssueDateInvalid" xml:space="preserve">
+    <value>Date cannot be in the future</value>
+  </data>
+  <data name="CardIssueMonthMissing" xml:space="preserve">
+    <value>Enter date of expiry&lt;br /&gt;</value>
+  </data>
+  <data name="CardIssueNumber" xml:space="preserve">
+    <value>Card issue number</value>
+  </data>
+  <data name="CardIssueNumberInvalid" xml:space="preserve">
+    <value>The issue number is invalid</value>
+  </data>
+  <data name="CardIssueNumberMissing" xml:space="preserve">
+    <value>Card issue number must be provided</value>
+  </data>
+  <data name="CardIssueYearMissing" xml:space="preserve">
+    <value>Enter date of expiry</value>
+  </data>
+  <data name="CardNumber" xml:space="preserve">
+    <value>Card number</value>
+  </data>
+  <data name="CardNumberInvalid" xml:space="preserve">
+    <value>Card number is invalid. The card number should be between 16 and 19 digits.</value>
+  </data>
+  <data name="CardSecurityCode" xml:space="preserve">
+    <value>Last 3 digits of card security code</value>
+  </data>
+  <data name="CardSecurityCodeInvalid" xml:space="preserve">
+    <value>The card security code is invalid&lt;br /&gt;</value>
+  </data>
+  <data name="CardSecurityCodeMissing" xml:space="preserve">
+    <value>Enter card security code</value>
+  </data>
+  <data name="CardSurchargePaid" xml:space="preserve">
+    <value>Card surcharge paid</value>
+  </data>
+  <data name="CardType" xml:space="preserve">
+    <value>Card type</value>
+  </data>
+  <data name="CertificateValidFrom" xml:space="preserve">
+    <value>Your certificate will need to be valid on</value>
+  </data>
+  <data name="CheckDetailsHeader" xml:space="preserve">
+    <value>Vehicle details</value>
+  </data>
+  <data name="CheckDetailsNumberPlateMessage" xml:space="preserve">
+    <value>Vehicle registration number</value>
+  </data>
+  <data name="Co2Text" xml:space="preserve">
+    <value>CO₂ emissions</value>
+  </data>
+  <data name="ContinueText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CustomerSurname" xml:space="preserve">
+    <value>Up to the first 3 characters of surname of disability exemption certificate holder e.g. woz</value>
+  </data>
+  <data name="CustomerSurnameErrorPrompt" xml:space="preserve">
+    <value>Please provide the first 3 characters of your surname</value>
+  </data>
+  <data name="CylinderCapacityText" xml:space="preserve">
+    <value>Cylinder capacity (cc)</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Please enter the date of birth of the disability exemption certificate holder (DD/MM/YYYY)</value>
+  </data>
+  <data name="DateOfBirthErrorPrompt" xml:space="preserve">
+    <value>Please enter a correct date of birth</value>
+  </data>
+  <data name="DateOfFirstRegistrationText" xml:space="preserve">
+    <value>Date of first registration</value>
+  </data>
+  <data name="DateofLastV5CIssuedText" xml:space="preserve">
+    <value>Date of last V5C issued</value>
+  </data>
+  <data name="DateOfLiability" xml:space="preserve">
+    <value>Date of liability</value>
+  </data>
+  <data name="DaysAgo" xml:space="preserve">
+    <value>{0} days ago</value>
+  </data>
+  <data name="Displaying" xml:space="preserve">
+    <value>Displaying</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="EmailAddressText" xml:space="preserve">
+    <value>Email address (optional. An email will be sent to confirm your transaction).</value>
+  </data>
+  <data name="EmailConfirmationText" xml:space="preserve">
+    <value>Please enter a valid email address</value>
+  </data>
+  <data name="ExemptionCertificateNumber" xml:space="preserve">
+    <value>VED exemption certificate serial number (found on your WPMS or DLA404 certificate issued by SPVA &amp; DWP)</value>
+  </data>
+  <data name="ExemptionCertificateNumberErrorPrompt" xml:space="preserve">
+    <value>Please enter your serial number</value>
+  </data>
+  <data name="ExportMarkerText" xml:space="preserve">
+    <value>Export marker</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="ForText" xml:space="preserve">
+    <value>for</value>
+  </data>
+  <data name="ForVehicleRegistrationText" xml:space="preserve">
+    <value>for vehicle registration</value>
+  </data>
+  <data name="FuelTypeText" xml:space="preserve">
+    <value>Fuel type</value>
+  </data>
+  <data name="IncludeV5CMessage" xml:space="preserve">
+    <value>Please include the incorrect V5C registration certificate for amendment.</value>
+  </data>
+  <data name="IncorrectVehicleDetailsMessage" xml:space="preserve">
+    <value>If you think that the details on the vehicle record are incorrect please write to:</value>
+  </data>
+  <data name="Item" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="MobileNumberText" xml:space="preserve">
+    <value>Mobile number (optional)</value>
+  </data>
+  <data name="MobileNumberValidatorText" xml:space="preserve">
+    <value>Please enter a valid mobile number</value>
+  </data>
+  <data name="MonthAgo" xml:space="preserve">
+    <value>1 month ago</value>
+  </data>
+  <data name="MonthConfirmationText" xml:space="preserve">
+    <value>month vehicle tax</value>
+  </data>
+  <data name="MonthsAgo" xml:space="preserve">
+    <value>{0} months ago</value>
+  </data>
+  <data name="NiNumber" xml:space="preserve">
+    <value>National Insurance (NI) number of disability exemption certificate holder e.g. AB123456X</value>
+  </data>
+  <data name="NiNumberErrorPrompt" xml:space="preserve">
+    <value>Please enter a valid National Insurance number</value>
+  </data>
+  <data name="NoReminderTaxMessage" xml:space="preserve">
+    <value>I don't have the V11 reminder, just the registration certificate</value>
+  </data>
+  <data name="NumberOfAxles" xml:space="preserve">
+    <value>Number of axles</value>
+  </data>
+  <data name="NumberPlate" xml:space="preserve">
+    <value>Number plate</value>
+  </data>
+  <data name="OfText" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="PaymentSummary" xml:space="preserve">
+    <value>Payment summary</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="RenewalPeriodHeaderText" xml:space="preserve">
+    <value>How long do you want to renew for?</value>
+  </data>
+  <data name="RenewTaxConfirmationText" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="RenewTaxConfirmVehicleText" xml:space="preserve">
+    <value>Vehicle details</value>
+  </data>
+  <data name="RenewTaxHeader" xml:space="preserve">
+    <value>Renew vehicle tax</value>
+  </data>
+  <data name="RenewTaxPaymentText" xml:space="preserve">
+    <value>Pay</value>
+  </data>
+  <data name="RenewTaxReferenceNumberStepText" xml:space="preserve">
+    <value>Your vehicle</value>
+  </data>
+  <data name="RenewTaxVEDConfirmationText" xml:space="preserve">
+    <value>Renewal period check</value>
+  </data>
+  <data name="RenewTaxVedPickerText" xml:space="preserve">
+    <value>Renewal period</value>
+  </data>
+  <data name="SelectText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="SixMonthRate" xml:space="preserve">
+    <value>6 Months rate</value>
+  </data>
+  <data name="SixMonths" xml:space="preserve">
+    <value>6 Months</value>
+  </data>
+  <data name="SornDisclaimerText" xml:space="preserve">
+    <value>Please be aware that if the vehicle has recently been taxed or a SORN declared, these details may not yet be updated on the vehicle record.</value>
+  </data>
+  <data name="SORNVehicle" xml:space="preserve">
+    <value>SORN a vehicle</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="StartDatePrompt" xml:space="preserve">
+    <value>Select start date for your tax:</value>
+  </data>
+  <data name="StartDatePrompt1" xml:space="preserve">
+    <value>Select start date for your tax:</value>
+  </data>
+  <data name="SubmitDeclarationText" xml:space="preserve">
+    <value>Submit declaration</value>
+  </data>
+  <data name="TaxBand" xml:space="preserve">
+    <value>Tax band</value>
+  </data>
+  <data name="TaxClass" xml:space="preserve">
+    <value>Tax class</value>
+  </data>
+  <data name="TaxDiscDeliveryMessage" xml:space="preserve">
+    <value>The tax disc will be dispatched to the registered keeper of the vehicle address currently held by DVLA and should arrive within 5 working days.</value>
+  </data>
+  <data name="ThankYouPaymentText" xml:space="preserve">
+    <value>Thank you for your payment</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="ToText" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="TwelvemonthRate" xml:space="preserve">
+    <value>12 Months rate</value>
+  </data>
+  <data name="TwelveMonths" xml:space="preserve">
+    <value>12 Months</value>
+  </data>
+  <data name="V11ReminderHeader" xml:space="preserve">
+    <value>First we need your vehicle details</value>
+  </data>
+  <data name="V11ReminderMessage" xml:space="preserve">
+    <value>Please type the 16 digit reference number from your V11 reminder</value>
+  </data>
+  <data name="V5CNumberMessage" xml:space="preserve">
+    <value>Please type the 11 digit reference number from the front of your registration certificate</value>
+  </data>
+  <data name="V5CVRMMessage" xml:space="preserve">
+    <value>Add your registration number</value>
+  </data>
+  <data name="ValidFrom" xml:space="preserve">
+    <value>valid from</value>
+  </data>
+  <data name="VCSAddress" xml:space="preserve">
+    <value>&lt;p&gt;VCS&lt;/p&gt;
+&lt;p&gt;DVLA&lt;/p&gt;
+&lt;p&gt;Swansea&lt;/p&gt;
+&lt;p&gt;SA99 1BA&lt;/p&gt;</value>
+  </data>
+  <data name="VedCommencementDate" xml:space="preserve">
+    <value>VED commencement date</value>
+  </data>
+  <data name="VEDConfirmationHeader" xml:space="preserve">
+    <value>The vehicle tax you applied for is:</value>
+  </data>
+  <data name="VEDContinueMessage" xml:space="preserve">
+    <value>Are you happy to continue? The details are:</value>
+  </data>
+  <data name="VedExempt" xml:space="preserve">
+    <value>VED exempt</value>
+  </data>
+  <data name="VedExemptionCertificateNumber" xml:space="preserve">
+    <value>VED exemption certificate serial number</value>
+  </data>
+  <data name="VehicleColourText" xml:space="preserve">
+    <value>Vehicle colour</value>
+  </data>
+  <data name="VehicleEnquiryHeader" xml:space="preserve">
+    <value>Vehicle enquiry</value>
+  </data>
+  <data name="VehicleEnquiryText" xml:space="preserve">
+    <value>To make an enquiry enter the vehicle registration number (number plate) and the vehicle make.</value>
+  </data>
+  <data name="VehicleExciseDutyRateForVehicleText" xml:space="preserve">
+    <value>Vehicle excise duty</value>
+  </data>
+  <data name="VehicleMake" xml:space="preserve">
+    <value>Vehicle make</value>
+  </data>
+  <data name="VehicleSearchMinValidation" xml:space="preserve">
+    <value>The registration number you provided is invalid</value>
+  </data>
+  <data name="VehicleSornStatus" xml:space="preserve">
+    <value>Tax/SORN status</value>
+  </data>
+  <data name="VehicleStatusText" xml:space="preserve">
+    <value>Vehicle status</value>
+  </data>
+  <data name="VehicleTypeApprovalText" xml:space="preserve">
+    <value>Vehicle type approval</value>
+  </data>
+  <data name="VehicleVRN" xml:space="preserve">
+    <value>Registration number</value>
+  </data>
+  <data name="YearAgo" xml:space="preserve">
+    <value>1 year ago</value>
+  </data>
+  <data name="YearOfManufactureText" xml:space="preserve">
+    <value>Year of manufacture</value>
+  </data>
+  <data name="YearsAgo" xml:space="preserve">
+    <value>{0} years ago</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="V11ErrorMessage" xml:space="preserve">
+    <value>Enter the full 16 digit number</value>
+  </data>
+  <data name="V5CErrorMessage" xml:space="preserve">
+    <value>Enter the full 11 digit number</value>
+  </data>
+  <data name="VRMErrorMessage" xml:space="preserve">
+    <value>You must enter your registration number</value>
+  </data>
+  <data name="TryAgain" xml:space="preserve">
+    <value>Try again</value>
+  </data>
+  <data name="CardDeclarationText" xml:space="preserve">
+    <value>Once payment is taken this is a non-reversible transaction.</value>
+  </data>
+  <data name="CardNumberMissing" xml:space="preserve">
+    <value>Enter full card number</value>
+  </data>
+  <data name="MotDeclaration" xml:space="preserve">
+    <value>Please select the appropriate declaration:</value>
+  </data>
+  <data name="MotDeclarationErrorMessage" xml:space="preserve">
+    <value>Please select a MOT/GVT declaration</value>
+  </data>
+  <data name="BackToPaymentText" xml:space="preserve">
+    <value>Back to payment</value>
+  </data>
+  <data name="MotDeclarationCorrect" xml:space="preserve">
+    <value>I declare this is correct</value>
+  </data>
+  <data name="MotDeclarationIncorrect" xml:space="preserve">
+    <value>I declare this is incorrect</value>
+  </data>
+  <data name="V149Link" xml:space="preserve">
+    <value>https://www.gov.uk/government/publications/rates-of-vehicle-tax-v149</value>
+  </data>
+  <data name="V149Text" xml:space="preserve">
+    <value>Rates of vehicle tax (V149)</value>
+  </data>
+  <data name="EmailAddressDeclaration" xml:space="preserve">
+    <value>The email address and/or mobile number supplied by you may also be used to ask about your experience of using this service, or to gain further insight around other motoring services.&lt;br/&gt;The DVLA does not share mobile phone numbers or email addresses with any outside organisations.</value>
+  </data>
+  <data name="EmailAddressOptOut" xml:space="preserve">
+    <value>Please tick if you wish to be sent information.</value>
+  </data>
+  <data name="WhereV11Num" xml:space="preserve">
+    <value>Where is my V11 reminder reference number?</value>
+  </data>
+  <data name="WhereV5CNum" xml:space="preserve">
+    <value>Where is my V5C document reference number?</value>
+  </data>
+  <data name="VEDValidationMessage" xml:space="preserve">
+    <value>Please select the vehicle tax you would like for the vehicle</value>
+  </data>
+  <data name="GlobalMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EmailAddressSornDeclarationText" xml:space="preserve">
+    <value>An email will be sent to confirm your transaction if you provide a valid email address. DVLA will not send you an acknowledgement letter.</value>
+  </data>
+  <data name="StartDatePromptDeclaration" xml:space="preserve">
+    <value>If you choose to tax from the 1&lt;sup&gt;st&lt;/sup&gt; of the following month, please be aware that the vehicle will remain untaxed or a SORN will remain in force until the 1&lt;sup&gt;st&lt;/sup&gt; day of the next month.  The vehicle cannot be used or kept on a public road until the 1&lt;sup&gt;st&lt;/sup&gt; of the next month.</value>
+  </data>
+  <data name="VehicleREV5CMaxValidation" xml:space="preserve">
+    <value>The V5C reference number you have provided should be 11 digits</value>
+  </data>
+  <data name="VehicleREV5CMinValidation" xml:space="preserve">
+    <value>Your reference number should contain 11 digits only</value>
+  </data>
+  <data name="VehicleSearchDDLMaxValidation" xml:space="preserve">
+    <value>Please select your vehicle from the drop down or enter your make in the 'other' field</value>
+  </data>
+  <data name="VehicleSearchDDLMinValidation" xml:space="preserve">
+    <value>You must select your vehicle make from the list</value>
+  </data>
+  <data name="VehicleSearchMaxValidation" xml:space="preserve">
+    <value>You must enter your registration number in a valid format</value>
+  </data>
+  <data name="VehicleSearchRequiredMaxValidationText" xml:space="preserve">
+    <value>You must enter your registration number in order to view your vehicle record</value>
+  </data>
+  <data name="VehicleSearchRequiredMinValidationText" xml:space="preserve">
+    <value>Please enter your registration number</value>
+  </data>
+  <data name="NoV11HeaderSORN" xml:space="preserve">
+    <value>You can SORN your vehicle online using the vehicle registration number (number plate) and registration certificate (log book).</value>
+  </data>
+  <data name="EitherMakeFromDDLorTextBox" xml:space="preserve">
+    <value>You must select a make from the list or enter your vehicle make in the text field</value>
+  </data>
+  <data name="V11ErrorMessageMin" xml:space="preserve">
+    <value>You must enter your 16 digit reference number</value>
+  </data>
+  <data name="V5CErrorMessageMin" xml:space="preserve">
+    <value>You must enter your 11 digit reference number</value>
+  </data>
+  <data name="VRMErrorMessageMin" xml:space="preserve">
+    <value>You must enter your registration number</value>
+  </data>
+  <data name="CardSecurityCodeText" xml:space="preserve">
+    <value>The last three digits on the signature strip</value>
+  </data>
+  <data name="SearchButtonText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="PayNowButtonText" xml:space="preserve">
+    <value>Pay now</value>
+  </data>
+  <data name="SornButtonText" xml:space="preserve">
+    <value>Make SORN</value>
+  </data>
+  <data name="SearchAgainButtonText" xml:space="preserve">
+    <value>Search again</value>
+  </data>
+  <data name="V5CDocumentReferenceNumberText" xml:space="preserve">
+    <value>V5C document reference number (optional)</value>
+  </data>
+  <data name="V11RefNumImageText" xml:space="preserve">
+    <value>Your V11 reminder reference number can be found on the front of your V11 reminder :</value>
+  </data>
+  <data name="V5CImageText" xml:space="preserve">
+    <value>Your V5C document reference number can be found on the front of your V5C :</value>
+  </data>
+  <data name="UserTypeErrorMessageMin" xml:space="preserve">
+    <value>Please select one of the following options</value>
+  </data>
+  <data name="V5C2ErrorMessage" xml:space="preserve">
+    <value>GB new keeper - please enter the full 12 digit number from your V5C/2. NI new keeper – sorry, due to NI insurance legislation, new keepers must tax at a Post Office® branch that deals with vehicle tax.</value>
+  </data>
+  <data name="V5C2ErrorMessageMin" xml:space="preserve">
+    <value>You must enter your 12 digit reference number</value>
+  </data>
+  <data name="V5C2ImageText" xml:space="preserve">
+    <value>Your V5C/2 document reference number can be found on the front of your V5C/2 :</value>
+  </data>
+  <data name="V5C2NumberMessage" xml:space="preserve">
+    <value>Please type the 12 digit reference number from the front of your new keeper supplement (V5C/2)</value>
+  </data>
+  <data name="V5CRadioText1" xml:space="preserve">
+    <value>Existing keeper (using V5C document reference number)</value>
+  </data>
+  <data name="V5CRadioText2" xml:space="preserve">
+    <value>New keeper (using V5C/2 new keeper supplement document reference number)</value>
+  </data>
+  <data name="WhereV5C2Num" xml:space="preserve">
+    <value>Where is my V5C/2 document reference number?</value>
+  </data>
+  <data name="NoReminderSornMessage" xml:space="preserve">
+    <value>I don't have the V11 reminder, just the registration certificate</value>
+  </data>
+  <data name="OneMonthly" xml:space="preserve">
+    <value>Monthly by direct debit totalling</value>
+  </data>
+  <data name="SixMonthly" xml:space="preserve">
+    <value>6 monthly by direct debit totalling</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TwelveMonthly" xml:space="preserve">
+    <value>12 monthly by direct debit totalling</value>
+  </data>
+  <data name="cccontainer" xml:space="preserve">
+    <value>Payment card renew options</value>
+  </data>
+  <data name="ddcontainer" xml:space="preserve">
+    <value>Direct debit renew options</value>
+  </data>
+  <data name="WhereToFindThisText" xml:space="preserve">
+    <value>Where to find this</value>
+  </data>
+</root>

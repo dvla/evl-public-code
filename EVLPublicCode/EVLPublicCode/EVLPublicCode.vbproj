@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{44E8B8EF-60AE-4DF3-8834-45F5D1979FD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>EVLPublicCode</RootNamespace>
+    <AssemblyName>EVLPublicCode</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EVLPublicCode.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>EVLPublicCode.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Images\accordian-arrow-10f715576be0695dd4a580b50e7d5f68.png" />
+    <Content Include="Assets\Images\accordian-arrow-2x-8be5139fd89449e13c1b83d26fec8406.png" />
+    <Content Include="Assets\Images\american-express-curved-32px-bw.png" />
+    <Content Include="Assets\Images\american-express-curved-32px.png" />
+    <Content Include="Assets\Images\apple-touch-icon-114x114-f1d7ccdc7b86d923386b373a9ba5e3db.png" />
+    <Content Include="Assets\Images\apple-touch-icon-144x144-4e306e01c31e237722b82b7aa7130082.png" />
+    <Content Include="Assets\Images\apple-touch-icon-57x57-37527434942ed8407b091aae5feff3f3.png" />
+    <Content Include="Assets\Images\apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png" />
+    <Content Include="Assets\Images\arrow-sprite-93afeb702f53a20045ad9f4ab8170825.png" />
+    <Content Include="Assets\Images\bgresultsstripplate.gif" />
+    <Content Include="Assets\Images\bis_crest_18px-e0ad84b8f02a467177eed65775fc9ffa.png" />
+    <Content Include="Assets\Images\bullet-disc-5px-4180cb91fb35028365a59ddfcfd36e34.gif" />
+    <Content Include="Assets\Images\bunting-bdffc8a421bfde13465cb4904bcd373d.png" />
+    <Content Include="Assets\Images\businesslink-logo-23aaf74ea476041c5b0b3841bd6c678c.png" />
+    <Content Include="Assets\Images\businesslink-logo-2x-b0f01b15372c3bc383c103ed1242c05d.png" />
+    <Content Include="Assets\Images\close-d05b62d4287151f959ffdcf2387898f7.png" />
+    <Content Include="Assets\Images\coa-default-18-376e9c4241eb2462eeadfac7cc47e277.gif" />
+    <Content Include="Assets\Images\coa-default-24-4eb9263c461297a00ec60296b36c4ded.gif" />
+    <Content Include="Assets\Images\coastguard_18px-075591d84d96717e7f9031c37dee91e2.png" />
+    <Content Include="Assets\Images\CreditCard_Security_Code_Image.png" />
+    <Content Include="Assets\Images\CROSS16.PNG" />
+    <Content Include="Assets\Images\directgov-logo-2x-5f674f266cd1807df3e22936be9a0613.png" />
+    <Content Include="Assets\Images\directgov-logo-ec7e275a0d4d6d02ce2ddf90d715d0e0.png" />
+    <Content Include="Assets\Images\discover-curved-32px-bw.png" />
+    <Content Include="Assets\Images\discover-curved-32px.png" />
+    <Content Include="Assets\Images\dropdown-arrow-small-a4f4e2df48e8d34de458bddf58e83a8a.png" />
+    <Content Include="Assets\Images\eugo-logo-6fa6a9ef75856c75a91617e55d4d474c.png" />
+    <Content Include="Assets\Images\expand-collapse-transparent-f40b7c49ee023bcf06397877060943a7.png" />
+    <Content Include="Assets\Images\external-link-24x24-d888ebcab9570f3a9e2d96f852ac841e.png" />
+    <Content Include="Assets\Images\external-link-4247fe6cbf644abe4092032a36a5837e.png" />
+    <Content Include="Assets\Images\external-link-black-12x12-0e08faeaec0dca8fe0e776df6f8ca406.png" />
+    <Content Include="Assets\Images\external-link-black-24x24-6868422affcfcc15561daf443cc32b5d.png" />
+    <Content Include="Assets\Images\favicon-447e4ac1ab790342660eacfe3dcce264.ico" />
+    <Content Include="Assets\Images\feed-icon-black-2797379a53d9064b97bc610ee4d3adae.png" />
+    <Content Include="Assets\Images\gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png" />
+    <Content Include="Assets\Images\gov.uk_logotype_crown.png" />
+    <Content Include="Assets\Images\govuk-crest-2x-1da912cf347870372d1245bc44ecb4a7.png" />
+    <Content Include="Assets\Images\govuk-crest-795cd6afb205d81a4267e100e11debe1.png" />
+    <Content Include="Assets\Images\govuk-crest-ie.png" />
+    <Content Include="Assets\Images\hmrc_crest_18px-c4dee9f35dafd7769b8a694a774b49af.png" />
+    <Content Include="Assets\Images\ho_crest_18px-6607634d62bea5b5bd6c57de6ab9d7d0.png" />
+    <Content Include="Assets\Images\ho_crest_18px.png" />
+    <Content Include="Assets\Images\ho_crest_18px_x2.png" />
+    <Content Include="Assets\Images\icon-calendar-2x-6bc181d5ec18418bf6b31066dfc948cc.png" />
+    <Content Include="Assets\Images\icon-calendar-a730cb41819a392647f1d9aa0e73df47.png" />
+    <Content Include="Assets\Images\icon-file-download-2x-964b81a0062f2918448e7c739812c67b.png" />
+    <Content Include="Assets\Images\icon-file-download-87670f937962413682fa7de1322c70a5.png" />
+    <Content Include="Assets\Images\icon-important-187bcc8d8a6d56498c4ac26cadad102d.png" />
+    <Content Include="Assets\Images\icon-important-2x-0c51d21ae5b1e705c354d42bb1b5930a.png" />
+    <Content Include="Assets\Images\icon-information-2x-eedbac65890d3d47722b2ac643d29937.png" />
+    <Content Include="Assets\Images\icon-information-f78d8c1b10b141b5a9a8c7a40220c4a4.png" />
+    <Content Include="Assets\Images\icon-pointer-063838cde108768e30b077e5303783fc.png" />
+    <Content Include="Assets\Images\icon-pointer-2x-4e80a3998449f88cfb24dba53a739286.png" />
+    <Content Include="Assets\Images\icon-pointer-black-bc94614c29215f1bd5ae3e02546f7df8.png" />
+    <Content Include="Assets\Images\icon-print-2x-ff7aa58e0228223005e55b217d4db674.png" />
+    <Content Include="Assets\Images\icon-print-9a70d5911b6625cafb5bf25ab77bc35c.png" />
+    <Content Include="Assets\Images\icon-step-1-2x-e4b7bb0f629da7101212d249d3220073.png" />
+    <Content Include="Assets\Images\icon-step-1-6afb52055d0f49ccc1ffa7c33ef10fb2.png" />
+    <Content Include="Assets\Images\icon-step-10-2x-992926dcbe9ded43c42d5f04025854a4.png" />
+    <Content Include="Assets\Images\icon-step-10-d316ad3a7d4a1e7358de69cbbd233b02.png" />
+    <Content Include="Assets\Images\icon-step-11-2x-f6853d04bb43a93410dcac2dd60fe4d3.png" />
+    <Content Include="Assets\Images\icon-step-11-a1b3cb56c8efaba167c31e11cb6d1656.png" />
+    <Content Include="Assets\Images\icon-step-12-2x-9b187343269740733fea96dd513ebb0a.png" />
+    <Content Include="Assets\Images\icon-step-12-b63fd261f8cdcc4b3dbabec3d22921c6.png" />
+    <Content Include="Assets\Images\icon-step-13-2x-5c2a84f5291c7434e560cc8d15b3ab4c.png" />
+    <Content Include="Assets\Images\icon-step-13-af899d1eb7137cf6870a8131a9172157.png" />
+    <Content Include="Assets\Images\icon-step-14-2x-36d8b08d939fc362dfe67ce41bcf951b.png" />
+    <Content Include="Assets\Images\icon-step-14-ce89c46a0baf75567e0d403e7e15959a.png" />
+    <Content Include="Assets\Images\icon-step-2-2x-1dd7dccc37dd28ecee1f493431c4a8ef.png" />
+    <Content Include="Assets\Images\icon-step-2-959e7eecd3702fe3bc7a61a57a40289b.png" />
+    <Content Include="Assets\Images\icon-step-3-2x-f8b1c0b935d71c4629f3ee65299b1adf.png" />
+    <Content Include="Assets\Images\icon-step-3-c95226d199222c14832170be0941a27a.png" />
+    <Content Include="Assets\Images\icon-step-4-2x-3370132b9083ad457389b8060cccf78b.png" />
+    <Content Include="Assets\Images\icon-step-4-60af308c82427fdd1d7d6d25276081b9.png" />
+    <Content Include="Assets\Images\icon-step-5-2x-457c197651d0b98b00a8afe4c45d3f62.png" />
+    <Content Include="Assets\Images\icon-step-5-b17e99ecee21386df7756a701d1065ba.png" />
+    <Content Include="Assets\Images\icon-step-6-11c0dabc312cc243190739cc83353020.png" />
+    <Content Include="Assets\Images\icon-step-6-2x-2affb9ee5a3923338aca1e35a5e18ae9.png" />
+    <Content Include="Assets\Images\icon-step-7-2x-efbf103c9b835a30b2f4006dc20442cc.png" />
+    <Content Include="Assets\Images\icon-step-7-ad4e1394e9d1545bdc5428e0f9cd3134.png" />
+    <Content Include="Assets\Images\icon-step-8-2x-5a8f06f27696dcc6500d60f1e809766b.png" />
+    <Content Include="Assets\Images\icon-step-8-b0e9859cbe3eafeda9facb7b3994c41e.png" />
+    <Content Include="Assets\Images\icon-step-9-2x-42d3fc7a6734b68af25d87efb554006a.png" />
+    <Content Include="Assets\Images\icon-step-9-67a02570896ebf742d7a3dba9aa6c160.png" />
+    <Content Include="Assets\Images\loading.gif" />
+    <Content Include="Assets\Images\locator-icon.png" />
+    <Content Include="Assets\Images\maestro-curved-32px-bw.png" />
+    <Content Include="Assets\Images\maestro-curved-32px.png" />
+    <Content Include="Assets\Images\mail-icon-d0277821fbdd6977b32433de46f5fec7.png" />
+    <Content Include="Assets\Images\mail-icon-x2-e6d6406e8790c5b832747e6065eeaf81.png" />
+    <Content Include="Assets\Images\mastercard-curved-32px-bw.png" />
+    <Content Include="Assets\Images\mastercard-curved-32px.png" />
+    <Content Include="Assets\Images\mod_crest_18px-71986a131077516e35c161dc567d773a.png" />
+    <Content Include="Assets\Images\open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" />
+    <Content Include="Assets\Images\organ-donation-logo-8de847c22049a8ad79f21ad6648c3bc0.jpg" />
+    <Content Include="Assets\Images\organ-donation-photo-84b2d33409b99fdc2bde8988a64cd00c.jpg" />
+    <Content Include="Assets\Images\org_crest_18px-0d15a5b24181c00d5a39e015b2e894e3.png" />
+    <Content Include="Assets\Images\Payment card.png" />
+    <Content Include="Assets\Images\play-video-cta-9225b26e83cbf9f8a26331193c571fad.png" />
+    <Content Include="Assets\Images\portcullis_18px-b19dd7280cbceb29edda3a0f33e26ffb.png" />
+    <Content Include="Assets\Images\search-button-ae8b4a52fcf80102a4ebccdde74bd46c.png" />
+    <Content Include="Assets\Images\separator-2x-2ff66846b80b66edba8ce56d29daa935.png" />
+    <Content Include="Assets\Images\separator-73822610794bc3a64871f144d93d6526.png" />
+    <Content Include="Assets\Images\social-icons-white-33e57e12b47e90f3e5d64f6a20dc314c.png" />
+    <Content Include="Assets\Images\so_crest_18px-ce7f42fe4500648a97aa4e412046af1d.png" />
+    <Content Include="Assets\Images\ukaea_crest_18px-831c69819819a172fbafcc06e676bda6.png" />
+    <Content Include="Assets\Images\ukho_18px-cc1435984102a9cff77e8efd73f26b7e.png" />
+    <Content Include="Assets\Images\V11.png" />
+    <Content Include="Assets\Images\V11_122x145.png" />
+    <Content Include="Assets\Images\V5C.png" />
+    <Content Include="Assets\Images\V5C2.png" />
+    <Content Include="Assets\Images\V5C_122x145.png" />
+    <Content Include="Assets\Images\visa-curved-32px-bw.png" />
+    <Content Include="Assets\Images\visa-curved-32px.png" />
+    <Content Include="Assets\Images\visa-electron-curved-32px-bw.png" />
+    <Content Include="Assets\Images\visa-electron-curved-32px.png" />
+    <Content Include="Assets\Images\wales_crest_18px-c8437b500a2936bf29650d432aa17749.png" />
+    <Content Include="Assets\Scripts\application-c7dbb181d219cf9ced8ade278b3b39ad.js" />
+    <Content Include="Assets\Scripts\bootstrap.js" />
+    <Content Include="Assets\Scripts\core.js" />
+    <Content Include="Assets\Scripts\frontend-dec53ab66c51515e326e5589507128bd.js" />
+    <Content Include="Assets\Scripts\govuk-template.js" />
+    <Content Include="Assets\Scripts\ie-fc5bd25c5f46587b9bff917417ab2b7f.js" />
+    <Content Include="Assets\Scripts\jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" />
+    <Content Include="Assets\Scripts\typeahead.min.js" />
+    <Content Include="Assets\Styles\fonts-ie8.css" />
+    <Content Include="Assets\Styles\fonts.css" />
+    <Content Include="Assets\Styles\govuk-template-ie6.css" />
+    <Content Include="Assets\Styles\govuk-template-ie7.css" />
+    <Content Include="Assets\Styles\govuk-template-ie8.css" />
+    <Content Include="Assets\Styles\govuk-template-print.css" />
+    <Content Include="Assets\Styles\govuk-template.css" />
+    <Content Include="ExamplepageFromMaster.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\AssetPaths1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssetPaths.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common.cy-GB.designer.vb" />
+    <Compile Include="App_GlobalResources\Common.cy-GB1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.cy-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Common1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Common.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EVLText.cy-GB1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVLText.cy-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EVLText1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVLText.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Code\MasterPages\ApplicationTemplate.Master.designer.vb">
+      <DependentUpon>ApplicationTemplate.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Code\MasterPages\ApplicationTemplate.Master.vb">
+      <DependentUpon>ApplicationTemplate.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExamplepageFromMaster.aspx.designer.vb">
+      <DependentUpon>ExamplepageFromMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExamplepageFromMaster.aspx.vb">
+      <DependentUpon>ExamplepageFromMaster.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\AssetPaths.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AssetPaths1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.cy-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common.cy-GB1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Common.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Common1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EVLText.cy-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EVLText.cy-GB1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EVLText.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EVLText1.designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\static\NTA-Bold-20130221.eot" />
+    <None Include="Assets\static\NTA-Bold-20130221.woff" />
+    <None Include="Assets\static\NTA-Light-20130221.eot" />
+    <None Include="Assets\static\NTA-Light-20130221.woff" />
+    <None Include="Assets\static\NTATabularNumbers-Bold.eot" />
+    <None Include="Assets\static\NTATabularNumbers-Bold.woff" />
+    <None Include="Assets\static\NTATabularNumbers-Light.eot" />
+    <None Include="Assets\static\NTATabularNumbers-Light.woff" />
+    <None Include="Assets\Styles\design-patterns\_alpha-beta.scss" />
+    <None Include="Assets\Styles\design-patterns\_buttons.scss" />
+    <None Include="Assets\Styles\design-patterns\_media-player.scss" />
+    <None Include="Assets\Styles\govuk-template-ie6.scss" />
+    <None Include="Assets\Styles\govuk-template-ie7.scss" />
+    <None Include="Assets\Styles\govuk-template-ie8.scss" />
+    <None Include="Assets\Styles\govuk-template-print.scss" />
+    <None Include="Assets\Styles\govuk-template.scss" />
+    <None Include="Assets\Styles\styleguide\_colours.scss" />
+    <None Include="Assets\Styles\styleguide\_conditionals2.scss" />
+    <None Include="Assets\Styles\styleguide\_print.scss" />
+    <None Include="Assets\Styles\_accessibility.scss" />
+    <None Include="Assets\Styles\_basic.scss" />
+    <None Include="Assets\Styles\_colours.scss" />
+    <None Include="Assets\Styles\_conditionals.scss" />
+    <None Include="Assets\Styles\_core-print.scss" />
+    <None Include="Assets\Styles\_css3.scss" />
+    <None Include="Assets\Styles\_device-pixels.scss" />
+    <None Include="Assets\Styles\_evl-template-print.scss" />
+    <None Include="Assets\Styles\_evl-template.scss" />
+    <None Include="Assets\Styles\_font_stack.scss" />
+    <None Include="Assets\Styles\_footer.scss" />
+    <None Include="Assets\Styles\_header.scss" />
+    <None Include="Assets\Styles\_measurements.scss" />
+    <None Include="Assets\Styles\_shims.scss" />
+    <None Include="Assets\Styles\_typography.scss" />
+    <Content Include="Code\MasterPages\ApplicationTemplate.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Styles\styleguide\styleguide\" />
+    <Folder Include="Code\Controls\" />
+    <Folder Include="Code\UserControls\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2224</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

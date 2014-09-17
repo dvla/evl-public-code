@@ -1,0 +1,46 @@
+// Media query helpers. These make producing IE layouts
+// super easy.
+
+// These are desktop and down media queries
+
+
+$is-ie: false !default;
+
+@mixin media-down($size: false, $max-width: false, $min-width: false) {
+	@if $is-ie == false {
+		@if $size == smalldevice {
+			@media (max-width: 475px){
+				@content;
+			}
+		} @else if $size == mobile {
+			@media (max-width: 640px){
+				@content;
+			}
+		} @else if $size == tablet {
+			@media (max-width: 800px){
+				@content;
+			}
+		} @else if $max-width != false {
+			@media (max-width: $max-width) {
+				@content;
+			}
+		}
+	}
+}
+@mixin media-up($size: false, $min-width: false) {
+	@if $is-ie == false {
+		@if $size == smalldevice {
+			@media (min-width: 476px){
+				@content;
+			}
+		} @else if $size == mobile {
+			@media (min-width: 641px){
+				@content;
+			}
+		} @else if $size == tablet {
+			@media (min-width: 801px){
+				@content;
+			}
+		}
+	}
+}
