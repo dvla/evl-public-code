@@ -130,16 +130,16 @@
     <value>Assets/Images/apple-touch-icon-72x72-2ddbe540853e3ba0d30fbad2a95eab3c.png</value>
   </data>
   <data name="core_js" xml:space="preserve">
-    <value>Assets/Scripts/core.js?10</value>
+    <value>Assets/Scripts/core.js?19</value>
   </data>
   <data name="favicon_ico" xml:space="preserve">
     <value>Assets/Images/favicon-447e4ac1ab790342660eacfe3dcce264.ico</value>
   </data>
   <data name="fonts_css" xml:space="preserve">
-    <value>Assets/Styles/fonts.css</value>
+    <value>Assets/gds/fonts-607c54f71c7c1f98257595cedaa13a34.css</value>
   </data>
   <data name="fonts_ie8_css" xml:space="preserve">
-    <value>Assets/Styles/fonts-ie8.css</value>
+    <value>Assets/gds/fonts-ie8-ec274e547d95d22db00164cc291c8611.css</value>
   </data>
   <data name="govuk_logotype_2x_png" xml:space="preserve">
     <value>Assets/Images/gov.uk_logotype-2x-24145374d271079f08d96c618cc8d4a5.png</value>
@@ -148,22 +148,22 @@
     <value>Assets/Images/gov.uk_logotype_crown.png</value>
   </data>
   <data name="govuk_template_css" xml:space="preserve">
-    <value>Assets/Styles/govuk-template.css?10</value>
+    <value>Assets/Styles/govuk-template.css?19</value>
   </data>
   <data name="govuk_template_ie6_css" xml:space="preserve">
-    <value>Assets/Styles/govuk-template-ie6.css?10</value>
+    <value>Assets/Styles/govuk-template-ie6.css?19</value>
   </data>
   <data name="govuk_template_ie7_css" xml:space="preserve">
-    <value>Assets/Styles/govuk-template-ie7.css?10</value>
+    <value>Assets/Styles/govuk-template-ie7.css?19</value>
   </data>
   <data name="govuk_template_ie8_css" xml:space="preserve">
-    <value>Assets/Styles/govuk-template-ie8.css?10</value>
+    <value>Assets/Styles/govuk-template-ie8.css?19</value>
   </data>
   <data name="govuk_template_js" xml:space="preserve">
-    <value>Assets/Scripts/govuk-template.js?10</value>
+    <value>Assets/Scripts/govuk-template.js?19</value>
   </data>
   <data name="govuk_template_print_css" xml:space="preserve">
-    <value>Assets/Styles/govuk-template-print.css?10</value>
+    <value>Assets/Styles/govuk-template-print.css?19</value>
   </data>
   <data name="ie6_css" xml:space="preserve">
     <value>Assets/Styles/application-ie6-d77048f3c3c8d29dd60fcdadd1fc57e2.css</value>
@@ -181,7 +181,7 @@
     <value>Assets/Scripts/ie-fc5bd25c5f46587b9bff917417ab2b7f.js</value>
   </data>
   <data name="jquery_js" xml:space="preserve">
-    <value>Assets/Scripts/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js</value>
+    <value>Assets/gds/jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js</value>
   </data>
   <data name="opengraph_image_png" xml:space="preserve">
     <value>Assets/Images/opengraph-image-4e469785ca4cc8f8dd18d0627bc43d19.png</value>
@@ -193,6 +193,40 @@
     <value>Assets/Styles/print-546864271280c5a1b3d7e8a0bbe71896.css</value>
   </data>
   <data name="webfont_debug_js" xml:space="preserve">
-    <value>Assets/Scripts/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js</value>
+    <value>Assets/gds/webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Assets/Images/loading.gif</value>
+  </data>
+  <data name="Maestro" xml:space="preserve">
+    <value>Assets/Images/maestro-curved-32px.png</value>
+  </data>
+  <data name="MasterCard" xml:space="preserve">
+    <value>Assets/Images/mastercard-curved-32px.png</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Assets/Images/CreditCard_Security_Code_Image.png</value>
+  </data>
+  <data name="TypeAhead" xml:space="preserve">
+    <value>Assets/Scripts/typeahead.min.js</value>
+  </data>
+  <data name="V11" xml:space="preserve">
+    <value>Assets/Images/V11_122x145.png</value>
+  </data>
+  <data name="V5C" xml:space="preserve">
+    <value>Assets/Images/V5C_122x145.png</value>
+  </data>
+  <data name="V5C2" xml:space="preserve">
+    <value>Assets/Images/V5C2.png</value>
+  </data>
+  <data name="Visa" xml:space="preserve">
+    <value>Assets/Images/visa-curved-32px.png</value>
+  </data>
+  <data name="VisaElectron" xml:space="preserve">
+    <value>Assets/Images/visa-electron-curved-32px.png</value>
+  </data>
+  <data name="AssetURLWithTrailingSlashAndFolder" xml:space="preserve">
+    <value />
+    <comment>https://www.assets.vehicletax.service.gov.uk/vehicletax/</comment>
   </data>
 </root>

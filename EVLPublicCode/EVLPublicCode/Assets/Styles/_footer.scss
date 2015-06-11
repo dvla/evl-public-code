@@ -5,17 +5,13 @@
   border-top: 1px solid $grey-6;
 
   .footer-wrapper {
-    max-width: 60em;
+    @include outer-block;
+    padding-top: 20px;
+    @include media(tablet) {
+      padding-top: 60px;
+    }
+    background-color: $grey-8;
     margin: 0 auto;
-    padding: 60px 1em 0 1em;
-
-    @include ie-lte(7) {
-      width: 928px; /* we want the width for IE to max out at 960px total (including padding) */
-    }
-
-    @include media-down(mobile) {
-      padding-top: 20px;
-    }
   }
 
   a {
@@ -38,32 +34,37 @@
   }
 
   .footer-meta {
+    @include inner-block;
+    @extend %contain-floats;
+    padding-bottom: 60px;
     clear: both;
     font-size: 0;
     color: $grey-3;
 
-    padding-bottom: 60px;
-
-    @include media-down(mobile) {
-      margin: 0;
-    }
-
     .footer-meta-inner {
       display: inline-block;
       vertical-align: bottom;
-      width: 75%;
+      width: 100%;
 
-      @include media-down(mobile) {
+      @include media(tablet) {
+        width: 75%;
+      }
+
+      @include ie-lte(7) {
+        float: left;
         display: block;
-        width: 100%;
       }
 
       ul {
         @include core-16($line-height: (24/16), $line-height-640: (24/16));
         display: inline-block;
         list-style: none;
-        margin: 0 0 1em;
+        margin: 0 0 1.5em 0;
         padding: 0;
+
+        @include media(tablet) {
+          margin: 0 0 1em 0;
+        }
 
         li {
           display: inline-block;
@@ -75,53 +76,42 @@
             padding-right: 15px;
           }
         }
-
-        @include media-down(mobile) {
-          width: auto;
-          margin: 0 0 1.5em 0;
-        }
       }
 
       .open-government-licence {
         clear: left;
         position: relative;
-        padding-left: 53px;
 
-        @include media-down(mobile) {
-          padding-left: 0;
+        @include media(tablet) {
+          padding-left: 53px;
         }
-
-		@include ie-lte(8) {
-			position: inherit;
-			padding-left: 0;
-		}
 
         @include ie(6) {
           zoom: 1;
         }
 
-		
-
-        h2 {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 41px;
-          height: 100%;
-		  
-		  @include ie-lte(8) {
-			position: inherit;
-		  }
-          @include media-down(mobile) {
-            position: static;
-            width: auto;
-            margin-bottom: 1em;
+        .logo {
+          margin-bottom: 1em;
+          padding-top: 0;
+          @include media(tablet) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 41px;
+            height: 100%;
           }
 
-          a, img {
+          a {
             display: block;
-            width: 43px;
+            width: 41px;
             height: 17px;
+            overflow:hidden;
+            text-indent: -999em;
+            background: url("../Images/open-government-licence.png") 0 0 no-repeat;
+            @include device-pixel-ratio() {
+              background-image: url("../Images/open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png");
+              background-size: 41px 17px;
+            }
           }
         }
 
@@ -129,35 +119,26 @@
           @include core-16;
           margin: 0;
           padding-top: 0.1em;
-
-          a {
-            @include core-14;
-
-            @include media-down(mobile) {
-              font-size: 1em;
-            }
-          }
         }
       }
-    
-      @include ie-lte(7) {
-        display: block;
-        float: left;
-      }
-
     }
 
     .copyright {
       @include core-16;
 
-      display: inline-block;
-      float: none;
-      text-align: inherit;
-      width: 25%;
-      padding-top: 15px;
+      margin: 30px 0 0 0;
+      width: 100%;
+      display: block;
+
+      @include media(tablet) {
+        display: inline-block;
+        text-align: inherit;
+        width: 25%;
+        padding-top: 15px;
+        margin-top: 0;
+      }
 
       @include ie-lte(7) {
-        display: block;
         float: right;
         height: 150px;
         width: 24%;
@@ -166,33 +147,32 @@
       a {
         display: block;
 
-        padding: 115px 0 0 0;
+        background-image: url("../Images/govuk-crest-795cd6afb205d81a4267e100e11debe1.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
 
-        background: transparent url("../Images/govuk-crest-795cd6afb205d81a4267e100e11debe1.png") no-repeat 100% 0;
-        text-align: right;
-        text-decoration: none;
-
-        @include ie(6) {
-          background-image: url("../Images/govuk-crest-ie.png");
+        @include media(tablet) {
+          background-position: 100% 0%;
         }
 
         @include device-pixel-ratio() {
           background-image: url("../Images/govuk-crest-2x-1da912cf347870372d1245bc44ecb4a7.png");
           background-size: 125px 102px;
         }
-      }
 
-      @include media-down(mobile) {
-        width: 100%;
-        display: block;
-        padding: 0;
-
-        margin: 30px 0 0 0;
-
-        a {
-          text-align: center;
-          background-position: 50% 0%;
+        @include ie(6) {
+          background-image: image-url("../Images/govuk-crest-ie.png");
         }
+
+        text-align: center;
+        text-decoration: none;
+
+        @include media(tablet) {
+          text-align: right;
+        }
+
+        padding: 115px 0 0 0;
+
       }
     }
   }

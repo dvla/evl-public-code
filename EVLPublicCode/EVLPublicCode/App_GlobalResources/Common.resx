@@ -142,7 +142,7 @@
     <value>Select</value>
   </data>
   <data name="SixMonths" xml:space="preserve">
-    <value>6 Months</value>
+    <value>6 Months at</value>
   </data>
   <data name="TaxBand" xml:space="preserve">
     <value>Tax band</value>
@@ -154,7 +154,7 @@
     <value>to</value>
   </data>
   <data name="TwelveMonths" xml:space="preserve">
-    <value>12 Months</value>
+    <value>12 Months at</value>
   </data>
   <data name="YearAgo" xml:space="preserve">
     <value>1 year ago</value>
@@ -169,7 +169,7 @@
     <value>or more axles</value>
   </data>
   <data name="AtADutyOf" xml:space="preserve">
-    <value>at a duty of</value>
+    <value />
   </data>
   <data name="Band" xml:space="preserve">
     <value>Band</value>
@@ -189,11 +189,12 @@
   <data name="ServiceUnavailableHeader1" xml:space="preserve">
     <value>Service Unavailable</value>
   </data>
-  <data name="ServiceUnavailableHeader2" xml:space="preserve">
-    <value>You can:</value>
-  </data>
   <data name="ServiceUnavailableText1" xml:space="preserve">
-    <value>I am sorry but this service is currently unavailable.</value>
+    <value>&lt;p&gt;Sorry...&lt;/p&gt;
+&lt;p&gt;DVLA’s Online service is currently unavailable as we’re undertaking essential maintenance work. This is only likely to take a few hours so we will be back shortly.&lt;/p&gt;
+&lt;p&gt;We apologise for any inconvenience this may cause.&lt;/p&gt;
+&lt;p&gt;Please use the link below to return to GOV.UK.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="govuk" class="content"&gt;Go to the GOV.UK homepage&lt;/a&gt;&lt;/p&gt;</value>
   </data>
   <data name="ServiceUnavailableText2" xml:space="preserve">
     <value>&lt;ul&gt;&lt;li&gt;Try again later&lt;br /&gt;OR&lt;/li&gt;&lt;li&gt;Alternatively, you can go to a Post Office® branch that deals with vehicle tax.&lt;/li&gt;&lt;/ul&gt;</value>
@@ -205,6 +206,18 @@
     <value>a duty of</value>
   </data>
   <data name="ReturnDDRates" xml:space="preserve">
-    <value>31-Oct-2001</value>
+    <value>31-Oct-2014</value>
+  </data>
+  <data name="TargetMaintenanceMode" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="TargetMaintenanceText" xml:space="preserve">
+    <value>&lt;strong&gt;Direct Debit&lt;/strong&gt; &lt;br&gt;&lt;p&gt;The Direct Debit service is currently unavailable.  Please renew your vehicle tax either by using the card options above or try again later.  &lt;/p&gt;</value>
+  </data>
+  <data name="ServiceUnavailableHeader2" xml:space="preserve">
+    <value>You can:</value>
+  </data>
+  <data name="DWPMaintenanceMode" xml:space="preserve">
+    <value>False</value>
   </data>
 </root>

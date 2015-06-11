@@ -1,17 +1,26 @@
-﻿Imports System.IO
-Imports System.Web.UI
-Imports System.Web
+﻿Imports System.Web
 Imports System.Globalization.CultureInfo
-Imports System.Globalization
 
 Public Class ApplicationTemplate
     Inherits System.Web.UI.MasterPage
-    
+
+    Private _serviceName As String = ""
+    Public Property ServiceName() As String
+        Get
+            If String.IsNullOrWhiteSpace(_serviceName) Then Return ""
+            Return _serviceName
+        End Get
+        Set(value As String)
+            _serviceName = value
+        End Set
+    End Property
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Page.IsPostBack Then
             SetGlobalMessage()
-            End If
+            SName.Text = ServiceName
+        End If
+
     End Sub
 
     ''' <summary>

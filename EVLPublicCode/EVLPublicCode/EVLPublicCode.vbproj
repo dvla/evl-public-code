@@ -56,6 +56,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -91,6 +92,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\gds\fonts-607c54f71c7c1f98257595cedaa13a34.css" />
+    <Content Include="Assets\gds\fonts-ie8-ec274e547d95d22db00164cc291c8611.css" />
+    <Content Include="Assets\gds\jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" />
+    <Content Include="Assets\gds\webfont-debug-96870cf9f159ed811fd43c39bdf4656b.js" />
     <Content Include="Assets\Images\accordian-arrow-10f715576be0695dd4a580b50e7d5f68.png" />
     <Content Include="Assets\Images\accordian-arrow-2x-8be5139fd89449e13c1b83d26fec8406.png" />
     <Content Include="Assets\Images\american-express-curved-32px-bw.png" />
@@ -117,6 +122,8 @@
     <Content Include="Assets\Images\discover-curved-32px-bw.png" />
     <Content Include="Assets\Images\discover-curved-32px.png" />
     <Content Include="Assets\Images\dropdown-arrow-small-a4f4e2df48e8d34de458bddf58e83a8a.png" />
+    <Content Include="Assets\Images\DVLA_Logo_Bi.png" />
+    <Content Include="Assets\Images\DVLA_Logo_En.png" />
     <Content Include="Assets\Images\eugo-logo-6fa6a9ef75856c75a91617e55d4d474c.png" />
     <Content Include="Assets\Images\expand-collapse-transparent-f40b7c49ee023bcf06397877060943a7.png" />
     <Content Include="Assets\Images\external-link-24x24-d888ebcab9570f3a9e2d96f852ac841e.png" />
@@ -184,6 +191,7 @@
     <Content Include="Assets\Images\mastercard-curved-32px-bw.png" />
     <Content Include="Assets\Images\mastercard-curved-32px.png" />
     <Content Include="Assets\Images\mod_crest_18px-71986a131077516e35c161dc567d773a.png" />
+    <Content Include="Assets\Images\open-government-licence.png" />
     <Content Include="Assets\Images\open-government-licence_2x-d273d7eca3045d3b710a863d9bfc0b33.png" />
     <Content Include="Assets\Images\organ-donation-logo-8de847c22049a8ad79f21ad6648c3bc0.jpg" />
     <Content Include="Assets\Images\organ-donation-photo-84b2d33409b99fdc2bde8988a64cd00c.jpg" />
@@ -216,13 +224,21 @@
     <Content Include="Assets\Scripts\ie-fc5bd25c5f46587b9bff917417ab2b7f.js" />
     <Content Include="Assets\Scripts\jquery-1.7.2-2ce4706f8f7193defaa9e7df2b641e9a.js" />
     <Content Include="Assets\Scripts\typeahead.min.js" />
-    <Content Include="Assets\Styles\fonts-ie8.css" />
-    <Content Include="Assets\Styles\fonts.css" />
-    <Content Include="Assets\Styles\govuk-template-ie6.css" />
-    <Content Include="Assets\Styles\govuk-template-ie7.css" />
-    <Content Include="Assets\Styles\govuk-template-ie8.css" />
-    <Content Include="Assets\Styles\govuk-template-print.css" />
-    <Content Include="Assets\Styles\govuk-template.css" />
+    <Content Include="Assets\Styles\govuk-template-ie6.css">
+      <DependentUpon>govuk-template-ie6.scss</DependentUpon>
+    </Content>
+    <Content Include="Assets\Styles\govuk-template-ie7.css">
+      <DependentUpon>govuk-template-ie7.scss</DependentUpon>
+    </Content>
+    <Content Include="Assets\Styles\govuk-template-ie8.css">
+      <DependentUpon>govuk-template-ie8.scss</DependentUpon>
+    </Content>
+    <Content Include="Assets\Styles\govuk-template-print.css">
+      <DependentUpon>govuk-template-print.scss</DependentUpon>
+    </Content>
+    <Content Include="Assets\Styles\govuk-template.css">
+      <DependentUpon>govuk-template.scss</DependentUpon>
+    </Content>
     <Content Include="ExamplepageFromMaster.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -231,6 +247,8 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="XSLT\TaxScript.xslt" />
+    <Content Include="XSLT\TaxScript_cy-GB.xslt" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_GlobalResources\AssetPaths1.designer.vb">
@@ -249,16 +267,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Common.resx</DependentUpon>
     </Compile>
+    <Compile Include="App_GlobalResources\EVLFilePaths.cy-GB1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVLFilePaths.cy-GB.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EVLFilePaths1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EVLFilePaths.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EVLText.cy-GB.designer.vb" />
     <Compile Include="App_GlobalResources\EVLText.cy-GB1.designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>EVLText.cy-GB.resx</DependentUpon>
     </Compile>
-    <Compile Include="App_GlobalResources\EVLText1.designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EVLText.resx</DependentUpon>
+    <Compile Include="App_GlobalResources\EVLText.designer.vb" />
+    <Compile Include="Code\Controls\BasePage.vb">
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Code\Controls\ScriptGenerator.vb" />
+    <Compile Include="Code\Controls\XslUtility.vb" />
     <Compile Include="Code\MasterPages\ApplicationTemplate.Master.designer.vb">
       <DependentUpon>ApplicationTemplate.Master</DependentUpon>
     </Compile>
@@ -314,6 +344,14 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>EVLText1.designer.vb</LastGenOutput>
     </Content>
+    <Content Include="App_GlobalResources\EVLFilePaths.cy-GB.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EVLFilePaths.cy-GB1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EVLFilePaths.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EVLFilePaths1.designer.vb</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -352,6 +390,7 @@
     <None Include="Assets\Styles\_evl-template.scss" />
     <None Include="Assets\Styles\_font_stack.scss" />
     <None Include="Assets\Styles\_footer.scss" />
+    <None Include="Assets\Styles\_grid_layout.scss" />
     <None Include="Assets\Styles\_header.scss" />
     <None Include="Assets\Styles\_measurements.scss" />
     <None Include="Assets\Styles\_shims.scss" />
@@ -369,7 +408,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Styles\styleguide\styleguide\" />
-    <Folder Include="Code\Controls\" />
     <Folder Include="Code\UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />

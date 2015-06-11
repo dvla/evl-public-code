@@ -178,7 +178,7 @@
     <value>Rhif y cerdyn</value>
   </data>
   <data name="CardNumberInvalid" xml:space="preserve">
-    <value>Rhif y cerdyn yn annilys. Dylai rhif y cerdyn fod rhwng 16 ac 19 digid.</value>
+    <value>Rhif y cerdyn yn annilys. Dylai rhif y cerdyn fod rhwng 13 ac 19 digid.</value>
   </data>
   <data name="CardNumberMissing" xml:space="preserve">
     <value>Rhowch rif llawn y cerdyn</value>
@@ -290,6 +290,8 @@
   </data>
   <data name="GlobalMessage" xml:space="preserve">
     <value />
+    <comment>&lt;a href="#divMoreGlobalMessage" class="toggle-target"&gt;Gweld y wybodaeth ar newid cyllideb&lt;/a&gt;
+&lt;div id="divMoreGlobalMessage" class="hideme"&gt;&lt;ul&gt;&lt;li&gt;Efallai  bydd  cost eich treth cerbyd yn newid yn dilyn unrhyw ddatganiad cyllideb gan Ganghellor y Trysorlys.&lt;/li&gt;&lt;li&gt;Efallai y gwelwch fod y swm rydych yn ei dalu am eich treth cerbyd yn wahanol i'r hyn a ddangosir ar eich ffurflen atgoffa (V11W)  a gynhyrchwyd cyn cyhoeddwyd y newidiadau.&lt;/li&gt;&lt;li&gt;Bydd y gyfradd yr ydych yn talu yr un fath p'un ai ydych yn prynu ar-lein, neu yn Swyddfa'r Post®.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</comment>
   </data>
   <data name="IncludeV5CMessage" xml:space="preserve">
     <value>Rhowch y dystysgrif gofrestru V5C anghywir i'w diwygio.</value>
@@ -334,10 +336,10 @@
     <value>Rhowch rif Yswiriant Gwladol  dilys</value>
   </data>
   <data name="NoReminderTaxMessage" xml:space="preserve">
-    <value>Nid yw'r ffurflen atgoffa V11W gennyf, dim ond y dystysgrif gofestru</value>
+    <value>Nid yw'r ffurflen atgoffa V11W gennyf, dim ond y dystysgrif gofestru neu'r atodiad ceidwad newydd</value>
   </data>
   <data name="NoV11HeaderSORN" xml:space="preserve">
-    <value>Gallwch wneud HOS ar gyfer eich cerbyd ar-lein drwy ddefnyddio rhif cofrestru'r cerbyd (rhif plât) a thystysgrif cofrestru (llyfr log)</value>
+    <value>Os ydych eisoes yn geidwad, gallwch wneud HOS ar eich cerbyd drwy ddefnyddio rhif cofrestru’r cerbyd (plât rhif) a’r dystysgrif cofrestru (llyfr log).</value>
   </data>
   <data name="NoV11HeaderTax" xml:space="preserve">
     <value>Gallwch adnewyddu eich disg dreth ar-lein drwy ddefnyddio rhif cofrestru'r cerbyd (rhif plât) a thystysgrif cofrestru (llyfr log)</value>
@@ -364,7 +366,7 @@
     <value>Pris</value>
   </data>
   <data name="RenewalPeriodHeaderText" xml:space="preserve">
-    <value>Pa mor hir ydych chi eisiau adnewyddu am?</value>
+    <value>Sut y byddai'n well gennych  dalu?</value>
   </data>
   <data name="RenewTaxConfirmationText" xml:space="preserve">
     <value>Wedi ei wneud</value>
@@ -373,7 +375,7 @@
     <value>Manylion y cerbyd</value>
   </data>
   <data name="RenewTaxHeader" xml:space="preserve">
-    <value>Adnewyddu disg dreth</value>
+    <value>Trethu cerbyd</value>
   </data>
   <data name="RenewTaxPaymentText" xml:space="preserve">
     <value>Talu</value>
@@ -412,7 +414,7 @@
     <value>Byddwch yn ymwybodol os bydd y cerbyd wedi ei drethu'n ddiweddar neu HOS wedi ei ddatgan, efallai na fydd y manylion hyn wedi eu diweddaru hyd yma ar gofnod y cerbyd.</value>
   </data>
   <data name="SORNVehicle" xml:space="preserve">
-    <value>HOS Cerbyd</value>
+    <value>Dywedwch wrthym eich bod yn cymryd eich cerbyd oddi ar y ffordd</value>
   </data>
   <data name="StartDate" xml:space="preserve">
     <value>Dyddiad cychwyn</value>
@@ -526,7 +528,7 @@
     <value>Lliw y cerbyd</value>
   </data>
   <data name="VehicleEnquiryHeader" xml:space="preserve">
-    <value>Ymholiad cerbyd</value>
+    <value>Manylion y cerbyd sy’n cael eu harchwilio</value>
   </data>
   <data name="VehicleEnquiryText" xml:space="preserve">
     <value>I wneud ymholiad rhowch rif cofrestru'r cerbyd (rhif plât) a gwneuthuriad y cerbyd.</value>
@@ -604,7 +606,7 @@
     <value>Ceidwad newydd  Prydain Fawr- rhowch y rhif 12 digid llawn oddi wrth eich V5C/2W. Ceidwad newydd Gogledd Iwerddon - mae'n ddrwg gennyf, oherwydd deddfwriaeth yswiriant GI mae'n rhaid i geidwaid newydd drethu yn un o ganghennau Swyddfa'r Post ® sy'n delio â threth cerbyd.</value>
   </data>
   <data name="V5C2NumberMessage" xml:space="preserve">
-    <value>Teipiwch y rhif cyfeirnod 12 digid o flaen eich atodiad ceidwad newydd (V5CW/2)</value>
+    <value>Teipiwch y rhif cyfeirnod  sydd ar flaen eich atodiad ceidwad newydd (V5C/2W)</value>
   </data>
   <data name="V5CRadioText1" xml:space="preserve">
     <value>Ceidwad Presennol (yn defnyddio rhif cyfeirnod y ddogfen V5CW)</value>
@@ -622,21 +624,51 @@
     <value>Lle mae fy rhif cyfeirnod dogfen V5CW/2?</value>
   </data>
   <data name="cccontainer" xml:space="preserve">
-    <value>Opsiynau adnewyddu gyda cherdyn talu</value>
+    <value>Cerdyn debyd neu credyd</value>
   </data>
   <data name="ddcontainer" xml:space="preserve">
-    <value>Opsiynau adnewyddu gyda debyd uniongyrchol</value>
+    <value>Neu talwch drwy debyd uniongyrchol</value>
   </data>
   <data name="OneMonthly" xml:space="preserve">
-    <value>Misol drwy gyfanswm debyd uniongyrchol</value>
+    <value>Misol (tua &lt;strong&gt;{0:C}&lt;/strong&gt; y mis) cyfanswm o</value>
   </data>
   <data name="SixMonthly" xml:space="preserve">
-    <value>6 misol drwy gyfanswm debyd uniongyrchol</value>
+    <value>6 mis (un taliad unigol) o</value>
   </data>
   <data name="TwelveMonthly" xml:space="preserve">
-    <value>12 misol drwy gyfanswm debyd uniongyrchol</value>
+    <value>12 mis (un taliad unigol) o</value>
   </data>
   <data name="WhereToFindThisText" xml:space="preserve">
     <value>Lle i ddod o hyd i hyn</value>
+  </data>
+  <data name="NoV11HeaderSORNNewKeeper" xml:space="preserve">
+    <value>Os ydych yn geidwad newydd, gallwch wneud HOS dim ond drwy ddefnyddio  ffurflen V890 Hysbysiad Oddi-ar-ffordd Statudol (HOS). Ewch i &lt;a alt="www.gov.uk/dvlaforms" href="http://www.gov.uk/dvlaforms" target="_blank"  rel="external"&gt;www.gov.uk/dvlaforms&lt;/a&gt;</value>
+  </data>
+  <data name="ServiceNameSorn" xml:space="preserve">
+    <value>Gwneud HOS</value>
+  </data>
+  <data name="ServiceNameTax" xml:space="preserve">
+    <value>Treth cerbyd</value>
+  </data>
+  <data name="ServiceNameVes" xml:space="preserve">
+    <value>Ymholiad cerbyd</value>
+  </data>
+  <data name="ServiceNameMot" xml:space="preserve">
+    <value>Mot history [WELSH TRANSLATION]</value>
+  </data>
+  <data name="V5C2ErrorMessageSORN" xml:space="preserve">
+    <value>Rhowch mewn y cyfeirnod oddi wrth eich V5C/2W</value>
+  </data>
+  <data name="RenewTaxHeaderStep2" xml:space="preserve">
+    <value>Gwirio manylion cerbyd</value>
+  </data>
+  <data name="RenewTaxHeaderStep3" xml:space="preserve">
+    <value>Taliad</value>
+  </data>
+  <data name="RenewTaxHeaderStep4" xml:space="preserve">
+    <value>Gwiriwch y manylion</value>
+  </data>
+  <data name="RenewTaxHeaderStep5" xml:space="preserve">
+    <value>Talu</value>
   </data>
 </root>

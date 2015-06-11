@@ -32,6 +32,15 @@ Partial Public Class ApplicationTemplate
     Protected WithEvents EVL As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''SName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SName As Global.System.Web.UI.WebControls.Literal
+
+    '''<summary>
     '''globalNotice control.
     '''</summary>
     '''<remarks>

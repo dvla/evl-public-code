@@ -139,34 +139,34 @@ function CreditCardTypeCheck(ccnum) {
     if (v.test(ccnum)) {
         if (ve.test(ccnum)) {
             // visa electron
-            document.getElementById("mastercard").src = "Assets/Images/mastercard-curved-32px-bw.png";
-            document.getElementById("visa").src = "Assets/Images/visa-curved-32px-bw.png";
-            document.getElementById("visaElectron").src = "Assets/Images/visa-electron-curved-32px.png";
-            document.getElementById("maestro").src = "Assets/Images/maestro-curved-32px-bw.png";
+            document.getElementById("mastercard").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/mastercard-curved-32px-bw.png";
+            document.getElementById("visa").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-curved-32px-bw.png";
+            document.getElementById("visaElectron").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-electron-curved-32px.png";
+            document.getElementById("maestro").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/maestro-curved-32px-bw.png";
         } else {
             //Visa
-            document.getElementById("mastercard").src = "Assets/Images/mastercard-curved-32px-bw.png";
-            document.getElementById("visa").src = "Assets/Images/visa-curved-32px.png";
-            document.getElementById("visaElectron").src = "Assets/Images/visa-electron-curved-32px-bw.png";
-            document.getElementById("maestro").src = "Assets/Images/maestro-curved-32px-bw.png";
+            document.getElementById("mastercard").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/mastercard-curved-32px-bw.png";
+            document.getElementById("visa").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-curved-32px.png";
+            document.getElementById("visaElectron").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-electron-curved-32px-bw.png";
+            document.getElementById("maestro").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/maestro-curved-32px-bw.png";
         }
     } else if (mc.test(ccnum)) {
         // Mastercard
-        document.getElementById("mastercard").src = "Assets/Images/mastercard-curved-32px.png";
-        document.getElementById("visa").src = "Assets/Images/visa-curved-32px-bw.png";
-        document.getElementById("visaElectron").src = "Assets/Images/visa-electron-curved-32px-bw.png";
-        document.getElementById("maestro").src = "Assets/Images/maestro-curved-32px-bw.png";
+        document.getElementById("mastercard").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/mastercard-curved-32px.png";
+        document.getElementById("visa").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-curved-32px-bw.png";
+        document.getElementById("visaElectron").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-electron-curved-32px-bw.png";
+        document.getElementById("maestro").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/maestro-curved-32px-bw.png";
     } else if (ma.test(ccnum)) {
         // Maestro
-        document.getElementById("mastercard").src = "Assets/Images/mastercard-curved-32px-bw.png";
-        document.getElementById("visa").src = "Assets/Images/visa-curved-32px-bw.png";
-        document.getElementById("visaElectron").src = "Assets/Images/visa-electron-curved-32px-bw.png";
-        document.getElementById("maestro").src = "Assets/Images/maestro-curved-32px.png";
+        document.getElementById("mastercard").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/mastercard-curved-32px-bw.png";
+        document.getElementById("visa").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-curved-32px-bw.png";
+        document.getElementById("visaElectron").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-electron-curved-32px-bw.png";
+        document.getElementById("maestro").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/maestro-curved-32px.png";
     } else {
-        document.getElementById("mastercard").src = "Assets/Images/mastercard-curved-32px.png";
-        document.getElementById("visa").src = "Assets/Images/visa-curved-32px.png";
-        document.getElementById("visaElectron").src = "Assets/Images/visa-electron-curved-32px.png";
-        document.getElementById("maestro").src = "Assets/Images/maestro-curved-32px.png";
+        document.getElementById("mastercard").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/mastercard-curved-32px.png";
+        document.getElementById("visa").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-curved-32px.png";
+        document.getElementById("visaElectron").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/visa-electron-curved-32px.png";
+        document.getElementById("maestro").src = "https://www.assets.vehicletax.service.gov.uk/vehicletax/Assets/Images/maestro-curved-32px.png";
     }
 
 

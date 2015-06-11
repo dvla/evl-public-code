@@ -1,26 +1,30 @@
 @import '_shims';
+@import '_conditionals';
+@import '_measurements';
+
 #global-header {
   background-color: $black;
   width: 100%;
 
   .header-wrapper {
+    background-color: $black;
     max-width: 990px;
     margin: 0 auto;
-    padding: 0.5em 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     @extend %contain-floats;
-    @include media-down(mobile){
-      padding: 0.5em 0;
+    @include media(tablet){
+      padding-left: $gutter-half;
+      padding-right: $gutter-half;
     }
-
-    @include ie(6) {
-      width: 960px;
+    @include ie-lte(8) {
+      width: 990px;
     }
 
     .header-global {
       @extend %contain-floats;
       .header-logo {
         @extend %contain-floats;
-        width: 49%;
         float: left;
 
         @include media(desktop){
@@ -40,6 +44,30 @@
       }
     }
   }
+  &.with-proposition {
+    .header-wrapper {
+      .header-global {
+        @include media(desktop){
+          float: left;
+          width: 33.33%;
+
+          .header-logo,
+          .site-search {
+            width: 100%;
+          }
+        }
+      }
+      .header-proposition {
+        @include media(desktop){
+          width: 66.66%;
+          float: left;
+        }
+        .content {
+          margin: 0 15px;
+        }
+      }
+    }
+  }
 
   #logo {
     float: left;
@@ -55,16 +83,18 @@
     font-size: 30px;
     line-height: 1em;
     text-decoration: none;
-    margin-bottom: 1px;
+    text-rendering: optimizeLegibility;
+    margin-bottom: -1px;
+    padding-bottom: 1px;
 
     img {
       position: relative;
-      top: -3px;
+      top: -2px;
 
       width: 35px;
       height: 31px;
 
-      padding-right: 8px;
+      padding-right: 6px;
 
       float: left;
       display: inline;
@@ -72,20 +102,156 @@
       border: none;
     }
 
-    span>span {
-      margin: 0 1px 0 -6px;
-    }
-
     &:hover,
     &:focus {
       text-decoration: none;
       border-bottom: 1px solid;
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
 
     &:active {
       color: $light-blue;
     }
+  }
+  .header-proposition {
+    padding-top: 10px;
+    @include media(desktop){
+      padding-top: 0;
+    }
+    #proposition-name {
+      @include core-24;
+      font-weight: bold;
+      color: $white;
+      text-decoration: none;
+    }
+    a#proposition-name:hover {
+      text-decoration: underline;
+    }
+    a.menu {
+      @include core-16;
+      color: $white;
+      display: block;
+      float: right;
+      text-decoration: none;
+      padding-top: 6px;
+      @include media(desktop){
+        display: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+      &:after {
+        display: inline-block;
+        font-size: 8px;
+        height: 8px;
+        padding-left: 5px;
+        vertical-align: middle;
+        content: " \25BC";
+      }
+      &.js-hidden:after {
+        content: " \25B2";
+      }
+    }
+    #proposition-menu {
+      margin-top: 5px;
+
+      // Some headers (Whitehall) don't have a propsition name, offset as if they did.
+      &.no-proposition-name {
+        @include media(desktop){
+          margin-top: 37px;
+          // 37px is the amount of margin required to line up the nav list with the top of the search box
+        }
+      }
+    }
+    #proposition-link,
+    #proposition-links {
+      clear: both;
+      @extend %contain-floats;
+      margin: 2px 0 0 0;
+      padding: 0;
+
+      .js-enabled & {
+        display: none;
+        @include media(desktop){
+          display: block;
+        }
+        &.js-visible {
+          display: block;
+        }
+      }
+
+      li {
+        float: left;
+        width: 50%;
+        padding: 3px 0;
+        border-bottom: 1px solid $grey-2;
+
+        @include media(desktop){
+          display: block;
+          width: auto;
+          padding: 0 15px 0 0;
+          border-bottom: 0;
+
+          &.clear-child {
+            clear: left;
+          }
+        }
+      }
+
+      a {
+        color: $white;
+        text-decoration: none;
+        @include bold-14;
+
+        @include media(desktop) {
+          @include bold-16;
+          line-height: 23px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+        &.active {
+          color: $proposition-active-nav;
+        }
+        &:focus {
+          color: $black;
+        }
+      }
+    }
+
+    #proposition-link {
+      float: right;
+      line-height: 22px;
+      .js-enabled & {
+        display:block;
+      }
+      @include media(desktop) {
+        float:none;
+      }
+    }
+  }
+}
+
+/* Global header bar */
+
+#global-header-bar {
+  /*@include outer-block;
+  .inner-block {
+    @include inner-block;
+  }
+  .header-bar {
+    height: 10px;
+    background-color: $govuk-blue;
+    @include ie-lte(8) {
+      font-size: 0;
+    }
+  }*/
+  @extend %site-width-container;
+  height: 10px;
+  background-color: $govuk-blue;
+  @include ie-lte(8) {
+    font-size: 0;
   }
 }
 
@@ -96,28 +262,20 @@
 }
 
 #global-cookie-message {
-  background-color: #d5e8f3;
+  width: 100%;
+  background-color: $light-blue-25;
   padding-top: 10px;
-  padding-bottom: 10px; }
-  #global-cookie-message .outer-block {
-    margin: 0 auto;
-    width: auto;
-    max-width: 1020px; }
-  #global-cookie-message .inner-block {
-    padding-left: 15px;
-    padding-right: 15px; }
-    @media (min-width: 641px) {
-      #global-cookie-message .inner-block {
-        padding-left: 30px;
-        padding-right: 30px; } }
-  #global-cookie-message p {
-    font-family: "nta", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 300;
-    text-transform: none;
-    margin: 0; }
-    @media (max-width: 640px) {
-      #global-cookie-message p {
-        font-size: 14px;
-        line-height: 1.14286; } }
+  padding-bottom: 10px;
+  /*.outer-block {
+    @include outer-block;
+  }
+  .inner-block {
+    @include inner-block;
+  }*/
+  p {
+	@extend %site-width-container;
+    @include core-16;
+    margin-top: 0;
+	margin-bottom: 0;
+  }
+}

@@ -7,6 +7,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup,
   vertical-align: baseline;
 }
 
+// HTML5 display definition
+main {
+  display: block;
+}
+
 // self clearing floats
 .group:before,
 .group:after {
@@ -39,14 +44,24 @@ html, body, div, h1, h2, h3, h4, h5, h6, article, aside, footer, header, hgroup,
 html {
   -webkit-text-size-adjust: 100%; /* 1 */
   -ms-text-size-adjust: 100%; /* 1 */
-  background: $white;
+  // Set background colour to match footer background
+  background-color: $grey-8;
+}
+
+/*
+  Force the scrollbar to always display in IE10/11
+ */
+html {
+  -ms-overflow-style: scrollbar;
 }
 
 body {
+  background: $white;
   color: $text-colour;
   line-height: 1.5;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ol, ul, nav ol, nav ul {
@@ -58,9 +73,12 @@ fieldset {
   padding: 0;
 }
 
-a,
-a:visited {
+a:link {
   color: $link-colour;
+}
+
+a:visited {
+  color: $link-visited-colour;
 }
 
 a:hover {
@@ -123,8 +141,10 @@ img {
   border: 0;
 }
 
-button {
-  *overflow:visible;
+@include ie-lte(7) {
+  button {
+    overflow:visible;
+  }
 }
 
 abbr[title] {
